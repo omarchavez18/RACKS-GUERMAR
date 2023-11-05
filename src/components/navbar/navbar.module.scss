@@ -34,6 +34,7 @@
 
     img {
       width: 16rem;
+      height: auto;
       object-fit: cover;
     }
   }
@@ -88,29 +89,34 @@
       color: white;
     }
   }
-}
 
-@media (max-width: 576px) {
-  .firstSection.firstSection {
-    display: flex;
-
-    .sideMenu.sideMenu {
-      display: block;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    section {
-      display: flex;
-      justify-content: center;
+  @media (max-width: 454px) {
+    .logo img {
+      width: 10rem;
     }
   }
+  @media (max-width: 576px) {
+    .firstSection.firstSection {
+      display: flex;
 
-  .secondSection.secondSection {
-    height: 2.5rem;
+      .sideMenu.sideMenu {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+      }
+    }
 
-    ul {
-      display: none;
+    .secondSection.secondSection {
+      height: 2.5rem;
+
+      ul {
+        display: none;
+      }
     }
   }
 }
