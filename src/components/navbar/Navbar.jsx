@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import Li from '../listItem/Li'
@@ -8,6 +9,12 @@ import whatsappIcon from '@/../src/../public/icons/whatsapp.svg'
 import facebookIcon from '@/../src/../public/icons/facebook.svg'
 
 const Navbar = () => {
+  // CIERRA EL MENU LATERAL QUE ABRE EL BOTON BURGER AL DARLE CLICK A ALGUNA OPCION
+  function cerrar() {
+    let sideNavbar = document.querySelector('.navbar-toggler')
+    return sideNavbar.click()
+  }
+
   return (
     <nav className={`navbar  bg-body-tertiary  ${style.nav} `}>
       {/* FIRST SECTION */}
@@ -43,7 +50,7 @@ const Navbar = () => {
 
         {/* LOGO */}
         <div>
-          <Link className={`navbar-brand ${style.logo}`} href='#'>
+          <Link className={`navbar-brand ${style.logo}`} href='/'>
             <Image src={logo} alt='guermar logo' width={200} height={50} />
           </Link>
         </div>
@@ -92,25 +99,27 @@ const Navbar = () => {
                       href={'/'}
                     >
                       <Li className={'nav-item'}>
-                        <h4>Inicio</h4>
+                        <h4 onClick={cerrar}>Inicio</h4>
                       </Li>
                     </Link>
+
                     <Link
                       className={'nav-link'}
                       aria-current='page'
                       href={'/productos'}
                     >
                       <Li className={'nav-item'}>
-                        <h4> Productos</h4>
+                        <h4 onClick={cerrar}> Productos</h4>
                       </Li>
                     </Link>
+
                     <Link
                       className={'nav-link'}
                       aria-current='page'
                       href='/servicios'
                     >
                       <Li className={'nav-item'}>
-                        <h4> Servicios</h4>
+                        <h4 onClick={cerrar}> Servicios</h4>
                       </Li>
                     </Link>
                     <Link
@@ -119,7 +128,7 @@ const Navbar = () => {
                       href='/contacto'
                     >
                       <Li className={'nav-item'}>
-                        <h4>Contacto</h4>
+                        <h4 onClick={cerrar}>Contacto</h4>
                       </Li>
                     </Link>
                     <Link
@@ -128,7 +137,7 @@ const Navbar = () => {
                       href='/quienes-somos'
                     >
                       <Li className={'nav-item'}>
-                        <h4>Quienes Somos</h4>
+                        <h4 onClick={cerrar}>Quienes Somos</h4>
                       </Li>
                     </Link>
                   </ul>
