@@ -1,4 +1,5 @@
 'use client'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import Li from '../listItem/Li'
@@ -9,6 +10,7 @@ import whatsappIcon from '@/../src/../public/icons/whatsapp.svg'
 import facebookIcon from '@/../src/../public/icons/facebook.svg'
 
 const Navbar = () => {
+  const pathname = usePathname()
   // CIERRA EL MENU LATERAL QUE ABRE EL BOTON BURGER AL DARLE CLICK A ALGUNA OPCION
   function cerrar() {
     let sideNavbar = document.querySelector('.navbar-toggler')
@@ -94,7 +96,7 @@ const Navbar = () => {
                     className={`navbar-nav justify-content-end flex-grow-1 pe-3 ${style.offCanvasBodyUl}`}
                   >
                     <Link
-                      className={'nav-link active'}
+                      className={'nav-link '}
                       aria-current='page'
                       href={'/'}
                     >
@@ -154,31 +156,41 @@ const Navbar = () => {
       {/* BARRA DE MENU  */}
       <div className={`${style.secondSection}`} id='navbarNav'>
         <ul className='navbar-nav '>
-          <Li className='nav-item '>
-            <Link className='nav-link active' aria-current='page' href='/'>
-              Inicio
-            </Link>
-          </Li>
-          <Li className='nav-item'>
-            <Link className='nav-link' href='/productos'>
-              Productos
-            </Link>
-          </Li>
-          <Li className='nav-item'>
-            <Link className='nav-link' href='servicios'>
-              Servicios
-            </Link>
-          </Li>
-          <Li className='nav-item'>
-            <Link className='nav-link' href='/contacto'>
-              Contacto
-            </Link>
-          </Li>
-          <Li className='nav-item'>
-            <Link className='nav-link' href='/quienes-somos'>
-              Quienes somos
-            </Link>
-          </Li>
+          <Link
+            className={`nav-link ${pathname == '/' && 'active'}`}
+            aria-current='page'
+            href='/'
+          >
+            <Li className='nav-item '>Inicio</Li>
+          </Link>
+
+          <Link
+            className={`nav-link ${pathname == '/productos' && 'active'}`}
+            href='/productos'
+          >
+            <Li className='nav-item'>Productos</Li>
+          </Link>
+
+          <Link
+            className={`nav-link ${pathname == '/servicios' && 'active'}`}
+            href='servicios'
+          >
+            <Li className='nav-item'>Servicios</Li>
+          </Link>
+
+          <Link
+            className={`nav-link ${pathname == '/contacto' && 'active'}`}
+            href='/contacto'
+          >
+            <Li className='nav-item'>Contacto</Li>
+          </Link>
+
+          <Link
+            className={`nav-link ${pathname == '/quienes-somos' && 'active'}`}
+            href='/quienes-somos'
+          >
+            <Li className='nav-item'>Quienes somos</Li>
+          </Link>
         </ul>
       </div>
     </nav>
