@@ -11,8 +11,8 @@ import facebookIcon from '@/../src/../public/icons/facebook.svg'
 
 const Navbar = () => {
   const pathname = usePathname()
-  // CIERRA EL MENU LATERAL QUE ABRE EL BOTON BURGER AL DARLE CLICK A ALGUNA OPCION
-  function cerrar() {
+  // CLOSE SIDE NAVBAR
+  function closeSideNavbar() {
     let sideNavbar = document.querySelector('.navbar-toggler')
     return sideNavbar.click()
   }
@@ -21,7 +21,8 @@ const Navbar = () => {
     <nav className={`navbar  bg-body-tertiary  ${style.nav} `}>
       {/* FIRST SECTION */}
 
-      {/* ICONOS */}
+      {/* ICONS */}
+      {/* TODO change the redirect URL of the icons */}
       <div className={style.firstSection}>
         <section>
           <Link href={'/'}>
@@ -58,7 +59,7 @@ const Navbar = () => {
         </div>
 
         <div>
-          {/* SIDE MENU */}
+          {/* SIDE NAVBAR MENU */}
           <div
             className={`container-fluid ${style.sideMenu}`}
             style={{ padding: '0' }}
@@ -101,7 +102,7 @@ const Navbar = () => {
                       href={'/'}
                     >
                       <Li className={'nav-item'}>
-                        <h4 onClick={cerrar}>Inicio</h4>
+                        <h4 onClick={closeSideNavbar}>Inicio</h4>
                       </Li>
                     </Link>
 
@@ -111,7 +112,7 @@ const Navbar = () => {
                       href={'/productos'}
                     >
                       <Li className={'nav-item'}>
-                        <h4 onClick={cerrar}> Productos</h4>
+                        <h4 onClick={closeSideNavbar}> Productos</h4>
                       </Li>
                     </Link>
 
@@ -121,7 +122,7 @@ const Navbar = () => {
                       href='/servicios'
                     >
                       <Li className={'nav-item'}>
-                        <h4 onClick={cerrar}> Servicios</h4>
+                        <h4 onClick={closeSideNavbar}> Servicios</h4>
                       </Li>
                     </Link>
                     <Link
@@ -130,7 +131,7 @@ const Navbar = () => {
                       href='/contacto'
                     >
                       <Li className={'nav-item'}>
-                        <h4 onClick={cerrar}>Contacto</h4>
+                        <h4 onClick={closeSideNavbar}>Contacto</h4>
                       </Li>
                     </Link>
                     <Link
@@ -139,7 +140,7 @@ const Navbar = () => {
                       href='/quienes-somos'
                     >
                       <Li className={'nav-item'}>
-                        <h4 onClick={cerrar}>Quienes Somos</h4>
+                        <h4 onClick={closeSideNavbar}>Quienes Somos</h4>
                       </Li>
                     </Link>
                   </ul>
@@ -149,11 +150,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {/* SECTION DIVIDER */}
+      <div className={style.sectionDivider} />
 
-      {/* SEPARADOR DE COLOR */}
-      <div className={style.separador} />
-
-      {/* BARRA DE MENU  */}
+      {/* PRINCIPAL NAVBAR  */}
       <div className={`${style.secondSection}`} id='navbarNav'>
         <ul className='navbar-nav '>
           <Link
