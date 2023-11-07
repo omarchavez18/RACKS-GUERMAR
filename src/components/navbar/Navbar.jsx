@@ -11,14 +11,14 @@ import facebookIcon from '@/../src/../public/icons/facebook.svg'
 
 const Navbar = () => {
   const pathname = usePathname()
-  // CLOSE SIDE NAVBAR
+
   function closeSideNavbar() {
     let sideNavbar = document.querySelector('.navbar-toggler')
     return sideNavbar.click()
   }
 
   return (
-    <nav className={`navbar  bg-body-tertiary  ${style.nav} `}>
+    <nav className={`navbar  bg-body-tertiary fixed-top ${style.nav} `}>
       {/* FIRST SECTION */}
 
       {/* ICONS */}
