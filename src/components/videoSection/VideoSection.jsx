@@ -1,4 +1,7 @@
 import style from './videoSection.module.scss'
+import Button from '../button/Button'
+import buttonStyle from '../button/button.module.scss'
+import Link from 'next/link'
 
 function VideoSection() {
   return (
@@ -10,7 +13,10 @@ function VideoSection() {
           <h2>GUERMAR MUEBLES METALICOS</h2>
           <hr />
           <p>Soluciones para todo tipo de necesidades</p>
-          <button>contactame</button>
+
+          <Link href={'/contacto'}>
+            <Button className={buttonStyle.btn}>{`contactanos >`} </Button>
+          </Link>
         </div>
       </section>
     </div>
