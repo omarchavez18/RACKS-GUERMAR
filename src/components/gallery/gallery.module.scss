@@ -1,0 +1,142 @@
+.title {
+  height: 5rem;
+  background-color: #ff7b00;
+  color: white;
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #484848 5px 6px 7px 8px;
+}
+
+.container {
+  width: 100%;
+  height: 30rem;
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  grid-column: 1fr 1fr;
+  grid-row: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'image1 image1 image2 image2'
+    'image1 image1 image2 image2'
+    'image3 image4 image5 image6';
+
+  .image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    transition: 0.8s ease-in-out;
+
+    img {
+      position: relative;
+      object-fit: cover;
+      object-position: center;
+      transition: 0.4s ease-in-out;
+      border-radius: 1rem;
+    }
+
+    img:hover {
+      cursor: crosshair;
+      filter: contrast(130%);
+      border: black double 6.2px;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnPop {
+    position: absolute;
+    background-color: #484848;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: #484848 6px double;
+    border-radius: 1rem;
+    transition: all 450ms ease-in-out;
+    scale: 0;
+  }
+
+  .image:hover .btnPop {
+    transform: rotate(6.3rad);
+    border-radius: 50%;
+    background-color: #0e5ec6;
+    color: white;
+    border: rgb(0, 0, 0) 6.2px double;
+    scale: 1;
+  }
+
+  .image1 {
+    grid-area: image1;
+  }
+  .image2 {
+    grid-area: image2;
+  }
+  .image3 {
+    grid-area: image3;
+  }
+  .image4 {
+    grid-area: image4;
+  }
+  .image5 {
+    grid-area: image5;
+  }
+  .image6 {
+    grid-area: image6;
+  }
+}
+@media (max-width: 786px) {
+  .container {
+    grid-column: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    grid-template-areas:
+      'image2 image1 image1'
+      'image3 image4 image5';
+    .image6 {
+      display: none;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas:
+      'image1 image2'
+      'image3 image4'
+      'image5 image6';
+    .image6 {
+      display: block;
+    }
+    .btnPop {
+      width: 5rem;
+      height: 5rem;
+      font-size: small;
+    }
+  }
+}
+@media (max-width: 454px) {
+  .container {
+    grid-column: 1fr;
+    grid-row: 1fr;
+    grid-template-areas:
+      'image1'
+      'image2'
+      'image3';
+
+    .image4,
+    .image5,
+    .image6 {
+      display: none;
+    }
+    height: 40rem;
+  }
+}
