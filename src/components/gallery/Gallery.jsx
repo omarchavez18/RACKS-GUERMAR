@@ -1,3 +1,4 @@
+//@refresh reset
 import Image from 'next/image'
 import style from './gallery.module.scss'
 import Link from 'next/link'
