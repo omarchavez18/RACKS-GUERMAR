@@ -1,10 +1,9 @@
-import { Inter } from 'next/font/google'
+import { openSans } from '@/../public/fonts/fonts'
 import './../globals/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Navbar from '@/components/navbar/Navbar'
 import BootstrapClient from '@/components/bootstrapClient/BootstrapClient'
-
-const inter = Inter({ subsets: ['latin'] })
+import Footer from '@/components/footer/Footer'
 
 export const metadata = {
   title: 'Guermar Muebles Metalicos',
@@ -14,10 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={openSans.className}>
         <Navbar />
         {children}
         <BootstrapClient />
+        <Footer />
       </body>
     </html>
   )
