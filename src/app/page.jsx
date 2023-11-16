@@ -1,3 +1,11 @@
+import Gallery from '@/components/gallery/Gallery'
+import VideoSection from '@/components/videoSection/VideoSection'
+
 export default function Home() {
-  return <div className='text-danger'>guermar</div>
+  return (
+    <>
+      <VideoSection />
+      <Gallery />
+    </>
+  )
 }
