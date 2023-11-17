@@ -25,30 +25,38 @@ const Navbar = () => {
       {/* TODO change the redirect URL of the icons */}
       <div className={style.firstSection}>
         <section>
-          <Link href={'/'}>
+          <a
+            href={'https://www.instagram.com/guermar.fabricanterack/'}
+            target='_blank'
+          >
             <Image
               src={instagramIcon}
               alt='instagram icon'
               height={20}
               width={20}
             />
-          </Link>
-          <Link href={'/'}>
+          </a>
+          <a
+            href={
+              'https://api.whatsapp.com/send?phone=+524776729928&text= Hola! buen dia, me gustaria realizar una cotizacion.'
+            }
+            target='_blank'
+          >
             <Image
               src={whatsappIcon}
               alt='whatsapp icon'
               height={20}
               width={20}
             />
-          </Link>
-          <Link href={'/'}>
+          </a>
+          <a href={'https://www.facebook.com/Guermarmuebles'} target='_blank'>
             <Image
               src={facebookIcon}
               alt='facebook icon'
               height={20}
               width={20}
             />
-          </Link>
+          </a>
         </section>
 
         {/* LOGO */}
