@@ -1,12 +1,12 @@
 .title {
   height: 5rem;
-  background-color: #ff7b00;
+  background-color: var(--orange);
   color: white;
   margin: 1rem 0 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: #484848 5px 6px 7px 8px;
+  box-shadow: var(--grey) 5px 6px 7px 8px;
 }
 
 .container {
@@ -52,14 +52,14 @@
   }
   .btnPop {
     position: absolute;
-    background-color: #484848;
+    background-color: var(--grey);
     width: 6rem;
     height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: #484848 6px double;
+    border: var(--grey) 6px double;
     border-radius: 1rem;
     transition: all 450ms ease-in-out;
     scale: 0;
@@ -68,7 +68,7 @@
   .image:hover .btnPop {
     transform: rotate(6.3rad);
     border-radius: 50%;
-    background-color: #0e5ec6;
+    background-color: var(--blue);
     color: white;
     border: rgb(0, 0, 0) 6.2px double;
     scale: 1;
