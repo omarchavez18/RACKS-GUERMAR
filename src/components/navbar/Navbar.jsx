@@ -22,7 +22,7 @@ const Navbar = () => {
       {/* FIRST SECTION */}
 
       {/* ICONS */}
-      {/* TODO change the redirect URL of the icons */}
+
       <div className={style.firstSection}>
         <section>
           <a
