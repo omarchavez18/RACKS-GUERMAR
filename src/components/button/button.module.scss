@@ -1,7 +1,7 @@
 .btn {
   background: none;
-  color: #0e5ec6;
-  border: 1.5px solid #0e5ec6;
+  color:var(--blue);
+  border: 1.5px solid var(--blue);
   border-radius: 1rem;
   position: relative;
   z-index: 1;
@@ -16,7 +16,7 @@
 }
 .btn::after {
   content: '';
-  background: #0e5ec6;
+  background:var(--blue);
   position: absolute;
   z-index: -1;
   padding: 16px 20px;

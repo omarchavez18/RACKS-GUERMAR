@@ -11,6 +11,8 @@ import laSalle from '@/../public/images/clients/lasalle.webp'
 import noblemaq from '@/../public/images/clients/noblemaq-de-mexico.webp'
 import serviacero from '@/../public/images/clients/serviacero.webp'
 import volkswagen from '@/../public/images/clients/volkswagen.webp'
+import jureka from '@/../public/images/clients/jureka.webp'
+import miretech from '@/../public/images/clients/miretech.webp'
 import ykk from '@/../public/images/clients/YKK.webp'
 import logo from '@/../public/images/logo/rackLogo.webp'
 
@@ -26,6 +28,8 @@ const PrincipalClients = () => {
     serviacero,
     volkswagen,
     ykk,
+    jureka,
+    miretech,
   ]
   return (
     <div className={style.container}>

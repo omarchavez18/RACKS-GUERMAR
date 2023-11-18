@@ -1,3 +1,9 @@
+:root {
+  --orange: #ff7c00;
+  --grey: #484848;
+  --blue: #0e5ec6;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -18,5 +24,5 @@ li {
   list-style: none;
 }
 .navbar-nav .nav-link.active {
-  color: #ff7c00;
+  color: var(--orange);
 }
