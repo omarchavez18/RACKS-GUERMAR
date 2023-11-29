@@ -34,7 +34,7 @@ const Footer = () => {
             </a>
             <a
               href={
-                'https://api.whatsapp.com/send?phone=+524776729928&text= Hola! buen dia, me gustaria realizar una cotizacion.'
+                'https://api.whatsapp.com/send?phone=+524771764248&text= Hola! buen dia, me gustaria realizar una cotizacion.'
               }
               target='_blank'
             >
@@ -71,9 +71,9 @@ const Footer = () => {
               width={50}
               height={50}
             />
-            <a href='tel:+524776729928'>
+            <a href='tel:+524777142209'>
               <p>
-                Nuestro telefono de atención: <br /> 477-672-9928.
+                Nuestro telefono de atención: <br /> 477-714-2209.
               </p>
             </a>
           </div>
