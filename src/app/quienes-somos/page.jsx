@@ -1,7 +1,7 @@
-import React from 'react'
+import AboutUs from '@/components/about-us/AboutUs'
 
 function QuienesSomos() {
-  return <div>Quienes Somos</div>
+  return <AboutUs />
 }
 
 export default QuienesSomos
