@@ -1,4 +1,4 @@
-// refresh reset
+// @refresh reset
 import Image from 'next/image'
 import Link from 'next/link'
 import style from './footer.module.scss'
