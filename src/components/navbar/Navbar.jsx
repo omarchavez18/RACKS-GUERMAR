@@ -38,7 +38,7 @@ const Navbar = () => {
           </a>
           <a
             href={
-              'https://api.whatsapp.com/send?phone=+524776729928&text= Hola! buen dia, me gustaria realizar una cotizacion.'
+              'https://api.whatsapp.com/send?phone=+524771764248&text= Hola! buen dia, me gustaria realizar una cotizacion.'
             }
             target='_blank'
           >

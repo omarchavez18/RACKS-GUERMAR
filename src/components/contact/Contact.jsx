@@ -50,20 +50,20 @@ function Contacto() {
                 Llamanos para atenderte de inmediato o mandanós un WhatsApp.
               </h6>
               <Button className={style.btn}>
-                <a href='tel:+524776729928' target='_blank'>
+                <a href='tel:+524777142209' target='_blank'>
                   <Image
                     src={telephoneIcon}
                     alt='telephone'
                     width={50}
                     height={50}
                   />
-                  <p>477-672-992</p>
+                  <p>477-714-2209</p>
                 </a>
               </Button>
 
               <Button className={style.btn}>
                 <a
-                  href='https://api.whatsapp.com/send?phone=+524776729928&text= Hola! buen dia, me gustaria realizar una cotizacion.'
+                  href='https://api.whatsapp.com/send?phone=+524771764248&text= Hola! buen dia, me gustaria realizar una cotizacion.'
                   target='_blank'
                 >
                   <Image
@@ -72,7 +72,7 @@ function Contacto() {
                     width={50}
                     height={50}
                   />
-                  <p>477-672-992</p>
+                  <p>477-176-4248</p>
                 </a>
               </Button>
             </section>
