@@ -1,7 +1,7 @@
-import React from 'react'
+import Contact from '@/components/contact/Contact'
 
 function Contacto() {
-  return <div>Contacto</div>
+  return <Contact />
 }
 
 export default Contacto
