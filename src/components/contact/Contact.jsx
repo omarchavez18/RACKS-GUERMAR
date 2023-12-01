@@ -12,6 +12,7 @@ import style from './contact.module.scss'
 import facebook from '@/../public/icons/colorFacebookIcon.svg'
 import instagram from '@/../public/icons/colorInstagramIcon.svg'
 import classNames from '@/helpers'
+import TitleSeparator from '../titleSeparator/TitleSeparator'
 
 function Contacto() {
   return (
@@ -20,9 +21,7 @@ function Contacto() {
         <Image src={shark} alt='contact' fill />
       </div>
 
-      <section className={titleStyle.title}>
-        <h2>CONTACTO</h2>
-      </section>
+      <TitleSeparator title={'CONTACTO'} />
 
       <div className={subtitleStyle.title}>
         <Image src={logo} alt='logo' />
