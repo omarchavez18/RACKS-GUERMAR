@@ -10,6 +10,7 @@
 }
 
 .container {
+  background-color: var(--grey);
   width: 100%;
   height: 30rem;
   display: grid;
@@ -35,7 +36,6 @@
       object-fit: cover;
       object-position: center;
       transition: 0.4s ease-in-out;
-      border-radius: 1rem;
     }
 
     img:hover {
@@ -52,25 +52,19 @@
   }
   .btnPop {
     position: absolute;
-    background-color: var(--grey);
-    width: 6rem;
-    height: 6rem;
+    width: 80%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: var(--grey) 6px double;
-    border-radius: 1rem;
     transition: all 450ms ease-in-out;
     scale: 0;
+    font-size: xx-large;
   }
 
   .image:hover .btnPop {
-    transform: rotate(6.3rad);
-    border-radius: 50%;
-    background-color: var(--blue);
     color: white;
-    border: rgb(0, 0, 0) 6.2px double;
     scale: 1;
   }
 
@@ -93,6 +87,12 @@
     grid-area: image6;
   }
 }
+.bottomSeparator {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--grey);
+}
+
 @media (max-width: 786px) {
   .container {
     grid-column: 1fr 1fr 1fr;
@@ -119,7 +119,7 @@
     .btnPop {
       width: 5rem;
       height: 5rem;
-      font-size: small;
+      font-size: xx-large;
     }
   }
 }
