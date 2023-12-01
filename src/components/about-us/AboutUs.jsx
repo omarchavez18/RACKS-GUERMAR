@@ -69,9 +69,14 @@ function AboutUs() {
             <h3>MISIÓN</h3>
             <hr />
             <p>
-              Cooperación y trabajo en equipo, Confianza de nuestros clientes y
-              de todos los que integramos la empresa, Servicio, Lealtad,
-              Positivismo, Compromiso, Seguridad, Respeto, Honestidad.
+              En GUERMAR, diseñamos, fabricamos y proporcionamos soluciones en
+              almacenamiento de la más alta calidad para convertir el espacio
+              vertical de nuestros clientes. Nos comprometemos a ofrecer
+              productos innovadores, funcionales y duraderos que cumplan con las
+              necesidades específicas de cada proyecto. A través de la
+              excelencia en la fabricación y el servicio al cliente, buscamos
+              ser el socio preferido para brindar soluciones metálicas en el
+              almacenamiento.
             </p>
           </section>
 
@@ -84,9 +89,15 @@ function AboutUs() {
             <h3>VISIÓN</h3>
             <hr />
             <p>
-              Cooperación y trabajo en equipo, Confianza de nuestros clientes y
-              de todos los que integramos la empresa, Servicio, Lealtad,
-              Positivismo, Compromiso, Seguridad, Respeto, Honestidad.
+              GUERMAR, busca ser líderes en la industria de fabricación de
+              muebles metálicos para el almacenamiento, reconocidos por nuestra
+              excelencia en diseño, calidad y servicio al cliente. Aspiramos a
+              ser pioneros en la introducción de tecnologías innovadoras que
+              mejoren la eficiencia y la versatilidad de nuestros proyectos.
+              Buscamos expandir nuestra presencia a nivel nacional y global,
+              estableciendo estándares de referencia para la industria y
+              contribuyendo al éxito operativo de nuestros clientes en todo el
+              mundo.
             </p>
           </section>
         </div>
