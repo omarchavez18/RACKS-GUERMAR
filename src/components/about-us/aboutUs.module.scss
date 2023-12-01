@@ -95,10 +95,14 @@
         background-color: var(--grey);
         color: white;
         text-align: center;
-        padding: 1rem;
+        padding: 2rem;
         display: flex;
         justify-content: center;
         flex-direction: column;
+
+        p {
+          text-align: justify;
+        }
       }
 
       .valuesContainerImg {
