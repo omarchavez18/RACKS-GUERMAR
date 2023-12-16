@@ -1,0 +1,47 @@
+.container {
+  margin-top: 9rem;
+
+  .subtitle {
+    text-align: center;
+    color: grey;
+    letter-spacing: 0.2rem;
+    margin-top: 3rem;
+  }
+
+  .questionsContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 2rem;
+    gap: 2px;
+
+    .accordionButton {
+      background-color: var(--grey);
+      color: white;
+    }
+
+    .accordionButton:focus {
+      color: var(--orange);
+      box-shadow: none;
+    }
+
+    .accordionButton::after {
+      background-color: white;
+    }
+    .accordionItem {
+      border-color: var(--grey);
+    }
+    .accordionBody {
+      text-align: justify;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .questionsContainer.questionsContainer {
+    width: 95%;
+    .accordionBody.accordionBody {
+      font-size: small;
+    }
+  }
+}
