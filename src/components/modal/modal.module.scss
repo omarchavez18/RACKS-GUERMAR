@@ -1,0 +1,46 @@
+.container {
+  .header {
+    background-color: var(--orange);
+  }
+
+  .body {
+    display: flex;
+    width: 100%;
+
+    .imgContainer {
+      width: 60%;
+      height: 23rem;
+
+      .carouselContainer {
+        height: 100%;
+        .innerContainer {
+          height: 100%;
+          .element {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .textContainer {
+      width: 40%;
+      text-align: justify;
+      display: flex;
+      align-items: center;
+      height: 23rem;
+      overflow: hidden;
+      overflow-y: scroll;
+      padding: 0 1rem;
+
+      p {
+        height: 22rem;
+      }
+    }
+  }
+  .btnClose:hover {
+    background-color: red;
+  }
+
+  .footer {
+    background-color: var(--grey);
+  }
+}
