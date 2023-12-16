@@ -151,6 +151,16 @@ const Navbar = () => {
                         <h4 onClick={closeSideNavbar}>Quienes Somos</h4>
                       </Li>
                     </Link>
+
+                    <Link
+                      className={'nav-link'}
+                      aria-current='page'
+                      href='/FAQ'
+                    >
+                      <Li className={'nav-item'}>
+                        <h4 onClick={closeSideNavbar}>FAQ</h4>
+                      </Li>
+                    </Link>
                   </ul>
                 </div>
               </div>
@@ -198,6 +208,12 @@ const Navbar = () => {
             href='/quienes-somos'
           >
             <Li className='nav-item'>Quienes somos</Li>
+          </Link>
+          <Link
+            className={`nav-link ${pathname == '/FAQ' && 'active'}`}
+            href='/FAQ'
+          >
+            <Li className='nav-item'>FAQ</Li>
           </Link>
         </ul>
       </div>
