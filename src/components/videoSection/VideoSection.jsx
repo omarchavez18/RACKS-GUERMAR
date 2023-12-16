@@ -3,16 +3,16 @@ import Button from '../button/Button'
 import buttonStyle from '../button/button.module.scss'
 import Link from 'next/link'
 
-function VideoSection() {
+function VideoSection({ video, title, subtitle }) {
   return (
     <div className={style.container}>
       <section className={style.videoArea}>
-        <video autoPlay muted loop src='./video/surfVideo.mp4' />
+        <video autoPlay muted loop src={video} />
         <div className={style.titleAndBtn}>
           <section className={style.bar}></section>
-          <h2>GUERMAR MUEBLES METALICOS</h2>
+          <h2>{title}</h2>
           <hr />
-          <p>Soluciones para todo tipo de necesidades</p>
+          <p>{subtitle}</p>
 
           <Link href={'/contacto'}>
             <Button className={buttonStyle.btn}>{`contactanos >`} </Button>
