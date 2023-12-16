@@ -48,16 +48,34 @@ function AboutUs() {
 
       <div className={style.historyContent}>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          doloremque totam corrupti debitis unde voluptatem beatae voluptatum
-          quas. Nisi sint deserunt sit nihil excepturi corrupti perspiciatis
-          neque maiores natus dolorem? Ipsum nobis, sit ab eum rerum voluptates
-          magnam natus quidem ex id non doloribus pariatur iusto, eius quasi
-          inventore iste soluta ullam minima temporibus? Quisquam accusantium ad
-          rerum id quis! Officiis nobis sapiente, atque ipsum animi perspiciatis
-          illum aliquid impedit suscipit. Sed a debitis neque suscipit nam iure
-          ipsam incidunt voluptatum saepe placeat, exercitationem enim fugit
-          repudiandae et iste ducimus.
+          Muebles Guer-Mar, una empresa leonesa con raíces profundas y una
+          historia que ha evolucionado con el tiempo. A pesar de que León era
+          reconocida principalmente por la fabricación de calzado, el Sr.
+          Alberto Guerra y su hijo Juan José Guerra Chávez desafiaron las normas
+          al establecer la única fundidora en la región. Esta fundidora jugó un
+          papel crucial en la creación de bancas que decoran el centro histórico
+          de León y otras ciudades circunvecinas. Posteriormente, el Sr. Juan
+          José Guerra se enfocó en la fabricación de herramientas para la
+          perforación de pozos. Sin embargo, cuando su hijo, Juan José Guerra
+          Bustamante, se unió a la empresa familiar, decidieron diversificarse.
+          Comenzaron fabricando comederos para animales, pero pronto
+          identificaron una creciente necesidad en el mercado local: mobiliario
+          para exhibición y almacenaje en los comercios emergentes de la ciudad
+          de León.
+          <br />
+          <hr />
+          En 1966, formalizaron su compromiso con la fabricación de muebles
+          metálicos y fundaron la empresa Muebles Metálicos GUER-MAR,
+          nombrándola en honor a las primeras letras de los apellidos Guerra y
+          Martínez, este último siendo el apellido de la esposa de Juan José,
+          Luz Rebeca. Desde entonces, Don Juan José y Luz Rebeca han liderado la
+          empresa. A lo largo de los años, los 8 hijos del matrimonio han
+          contribuido al negocio en diferentes momentos, y en la actualidad, la
+          administración está en manos de Lorena, la hija menor, quien continúa
+          llevando adelante la visión y el legado de la familia. Muebles
+          Guer-Mar es más que una empresa; es un testimonio de la tenacidad, la
+          evolución y el compromiso de una familia con la excelencia y la
+          innovación en León
         </p>
       </div>
 
