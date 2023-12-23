@@ -1,7 +1,7 @@
-import React from 'react'
+import Service from '@/components/services/Service'
 
 function Servicios() {
-  return <div>Servicios</div>
+  return <Service />
 }
 
 export default Servicios
