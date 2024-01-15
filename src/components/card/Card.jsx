@@ -15,14 +15,15 @@ function Card({ image, imageAlt, title, subtitle, buttonText, click }) {
           <p>{subtitle}</p>
           <Button
             type='button'
-            className={btnStyle.btn}
+            style={{ width: '95%' }}
+            className={btnStyle.productBtn}
             data-bs-toggle='modal'
             data-bs-target='#staticBackdrop'
             onClick={() => {
               click && click()
             }}
           >
-            {buttonText}
+            <p className={btnStyle.text}>{buttonText}</p>
           </Button>
         </div>
       </div>
