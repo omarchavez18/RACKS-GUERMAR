@@ -1,0 +1,29 @@
+.carouselContainer {
+  height: 100%;
+  .innerContainer {
+    height: 100%;
+    .element {
+      height: 100%;
+      .imagesContainer {
+        width: 100%;
+        img {
+          padding: 3rem;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+.arrow {
+  background-color: black;
+  border-radius: 50%;
+  width: 2rem;
+}
+
+@media (max-width: 400px) {
+  .carouselContainer.carouselContainer.carouselContainer {
+    .imagesContainer img {
+      padding: 1.5rem;
+    }
+  }
+}
