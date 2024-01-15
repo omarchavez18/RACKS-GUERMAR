@@ -4,7 +4,7 @@
   background: #313131;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
@@ -35,6 +35,7 @@
     transition: 0.8s ease-in-out;
     z-index: 2;
     text-align: center;
+
     p {
       font-weight: bold;
     }
@@ -44,9 +45,12 @@
 
 .cards:hover > .textBox {
   opacity: 1;
-  position: absolute;
   transition: 0.8s ease-in-out;
+  position: absolute;
   display: block;
+  width: 95%;
+  background-color: rgba(128, 128, 128, 0.86);
+  border-radius: 1rem;
 }
 
 .cards:hover > .imgContainer > img {
@@ -60,5 +64,34 @@
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    height: 18rem;
+
+    .textBox {
+      h4 {
+        font-size: 3vw;
+      }
+      p {
+        font-size: 2vw;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    height: 16rem;
+
+    .textBox {
+      h4 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.7rem;
+      }
+    }
   }
 }

@@ -1,6 +1,6 @@
 .btn {
   background: none;
-  color:var(--blue);
+  color: var(--blue);
   border: 1.5px solid var(--blue);
   border-radius: 1rem;
   position: relative;
@@ -11,12 +11,16 @@
   height: 4rem;
   font-weight: bold;
 }
+
+.text {
+  margin: 0;
+}
 .btn:hover {
   color: #fff;
 }
 .btn::after {
   content: '';
-  background:var(--blue);
+  background: var(--blue);
   position: absolute;
   z-index: -1;
   padding: 16px 20px;
@@ -35,4 +39,50 @@
   bottom: 0;
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
+}
+
+.productBtn {
+  background: none;
+  color: var(--blue);
+  border: 1.5px solid var(--blue);
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  width: 13rem;
+  height: 4rem;
+  font-weight: bold;
+}
+
+.productBtn:hover {
+  color: #fff;
+}
+.productBtn::after {
+  content: '';
+  background: var(--blue);
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.productBtn:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+@media (max-width: 768px) {
+  .productBtn {
+    height: 3rem;
+  }
 }
