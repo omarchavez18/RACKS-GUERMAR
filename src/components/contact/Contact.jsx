@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Button from '../button/Button'
-import titleStyle from '@/components/gallery/gallery.module.scss'
+
 import subtitleStyle from '@/components/principalClients/principalClients.module.scss'
 import logo from '@/../public/images/logo/rackLogo.webp'
 import telephoneIcon from '@/../public/animatedIcons/telephone.svg'
@@ -25,7 +25,7 @@ function Contacto() {
 
       <div className={subtitleStyle.title}>
         <Image src={logo} alt='logo' />
-        <h2>¿Tienes preguntas?</h2>
+        <h2 id='contacto'>¿Tienes preguntas?</h2>
         <p>Con gusto te ayudaremos a resolverlas, ¡Contactanos!</p>
       </div>
 
@@ -115,14 +115,11 @@ function Contacto() {
       <div className={style.social}>
         <h2>Siguenos en nuestras redes sociales.</h2>
         <section className={style.socialIcons}>
-          <a href={'https://www.facebook.com/Guermarmuebles'} target='_blank'>
+          <a href={'https://www.facebook.com/Guermaracks'} target='_blank'>
             <Image src={facebook} alt='facebook' width={50} height={50} />
           </a>
 
-          <a
-            href={'https://www.instagram.com/guermar.fabricanterack/'}
-            target='_blank'
-          >
+          <a href={'https://www.instagram.com/racks.guermar/'} target='_blank'>
             <Image src={instagram} alt='instagram' width={50} height={50} />
           </a>
         </section>

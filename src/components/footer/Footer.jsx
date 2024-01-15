@@ -22,7 +22,7 @@ const Footer = () => {
 
           <section className={style.social}>
             <a
-              href={'https://www.instagram.com/guermar.fabricanterack/'}
+              href={'https://www.instagram.com/racks.guermar/'}
               target='_blank'
             >
               <Image
@@ -45,7 +45,7 @@ const Footer = () => {
                 width={20}
               />
             </a>
-            <a href={'https://www.facebook.com/Guermarmuebles'} target='_blank'>
+            <a href={'https://www.facebook.com/Guermaracks'} target='_blank'>
               <Image
                 src={facebookColorIcon}
                 alt='facebook icon'
