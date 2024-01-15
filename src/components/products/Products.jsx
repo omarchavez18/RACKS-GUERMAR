@@ -1,7 +1,29 @@
 'use client'
 import style from './products.module.scss'
 import Image from 'next/image'
-import shark from '@/../public/images/contact/shark.jpg'
+import rackCarga1 from '@/../public/images/products/rackSelectivo/rackCarga1.jpg'
+import rackCarga2 from '@/../public/images/products/rackSelectivo/rackCarga2.jpg'
+import rackCarga3 from '@/../public/images/products/rackSelectivo/rackCarga3.jpg'
+import rackCarga5 from '@/../public/images/products/rackSelectivo/rackCarga5.jpg'
+import rackCarga6 from '@/../public/images/products/rackSelectivo/rackCarga6.jpg'
+import rackCarga7 from '@/../public/images/products/rackSelectivo/rackCarga7.jpg'
+import rackCarga8 from '@/../public/images/products/rackSelectivo/rackCarga8.jpg'
+import rackCarga9 from '@/../public/images/products/rackSelectivo/rackCarga9.jpg'
+
+import mezzanine1 from '@/../public/images/products/mezzanine/mezzanine1.jpg'
+import mezzanine2 from '@/../public/images/products/mezzanine/mezzanine2.jpg'
+
+import anaquel1 from '@/../public/images/products/anaquel/anaquelSinTornilloAp.jpeg'
+import anaquel2 from '@/../public/images/products/anaquel/anaquelTipoAp.png'
+
+import rackPicking1 from '@/../public/images/products/rackPicking/rackPicking1.jpg'
+import rackPicking2 from '@/../public/images/products/rackPicking/rackPicking2.jpg'
+import rackPicking3 from '@/../public/images/products/rackPicking/rackPicking3.jpg'
+
+import estanteria1 from '@/../public/images/products/estanterias/estanteriaConTornillo.jpg'
+import whale from '@/../public/images/aboutUs/ballena.jpg'
+
+import scubadiver from '@/../public/images/gallery/2.webp'
 import VideoSection from '../videoSection/VideoSection'
 import qualityIcon from '@/../public/icons/products/qualityIcon.svg'
 import toolsIcon from '@/../public/icons/products/tools.svg'
@@ -9,12 +31,14 @@ import rackIcon from '@/../public/icons/products/rackIcon.svg'
 import MultiCarousel from '../multiItemCarousel/MultiCarousel'
 import TitleSeparator from '../titleSeparator/TitleSeparator'
 import Button from '../button/Button'
+import Carousel from '../carousel/Carousel'
+import Link from 'next/link'
 
 function Products() {
   return (
     <div className={style.container}>
       <VideoSection
-        video={'./video/products/surfer.mp4'}
+        video={'./video/products/productsVideo.mp4'}
         title={'Nuestros Productos'}
         subtitle={'productos de  la mejor calidad en la región'}
       />
@@ -23,7 +47,7 @@ function Products() {
           <Image src={qualityIcon} width={50} height={50} alt='quality icon' />
           <p>
             Brindamos los mejores servicios respetando los estandares más altos
-            de calidad para cumplir con las exigencias de nuestros clientes.
+            de calidad para cumplir con nuestros clientes.
           </p>
         </div>
         <div>
@@ -43,7 +67,7 @@ function Products() {
       </section>
 
       {/* RACK SELECTIVO */}
-      <div className={style.principalProduct}>
+      <div id='rackSelectivo' className={style.principalProduct}>
         <section className={style.principalProductTextSection}>
           <p className={style.subtitle}>
             <em>Solución ideal para bodegas de almacén.</em>
@@ -67,7 +91,10 @@ function Products() {
             conserven en óptimo estado. Descubre una nueva dimensión en el
             almacenamiento de carga pesada.
           </p>
-          <Button className={style.btn}>cotizar</Button>
+
+          <Link href={'/contacto#contacto'}>
+            <Button className={style.btn}>cotizar</Button>
+          </Link>
           <div>
             <section className={style.capacityContainer}>
               <div>
@@ -86,14 +113,27 @@ function Products() {
             </section>
           </div>
         </section>
-        <div className={style.imageContainer}>
-          <Image className={style.img} src={shark} alt='rack' fill />
+
+        <div className={style.carouselPrincipalContainer}>
+          <Carousel
+            firstImage={rackCarga9}
+            images={[
+              { image: rackCarga1, alt: 'rack selectivo de carga pesada' },
+              { image: rackCarga2, alt: 'rack selectivo de carga pesada' },
+              { image: rackCarga5, alt: 'rack selectivo de carga pesada' },
+              { image: rackCarga6, alt: 'rack selectivo de carga pesada' },
+              { image: rackCarga7, alt: 'rack selectivo de carga pesada' },
+              { image: rackCarga8, alt: 'rack selectivo de carga pesada' },
+              { image: rackCarga3, alt: 'rack selectivo de carga pesada' },
+            ]}
+            carouselId={'carousel1'}
+          />
         </div>
       </div>
 
       <section className={style.secondaryProducts}>
         {/* RACK PICKING */}
-        <main className={style.rackPicking}>
+        <main id='rackPicking' className={style.rackPicking}>
           <div className={style.titleAndImage}>
             <section className={style.titleSection}>
               <p>
@@ -106,7 +146,14 @@ function Products() {
             </section>
 
             <section className={style.secondaryMainImgContainer}>
-              <Image src={shark} alt='rack picking' fill />
+              <Carousel
+                firstImage={rackPicking2}
+                images={[
+                  { image: rackPicking1, alt: 'Rack picking' },
+                  { image: rackPicking3, alt: 'rack picking' },
+                ]}
+                carouselId={'carousel2'}
+              />
             </section>
           </div>
 
@@ -132,17 +179,19 @@ function Products() {
               a las cambiantes necesidades de tu operación.
             </p>
 
-            <Button
-              style={{ margin: '0', background: 'white', border: 'none' }}
-              className={style.btn}
-            >
-              cotizar
-            </Button>
+            <Link href={'/contacto#contacto'}>
+              <Button
+                style={{ margin: '0', background: 'white', border: 'none' }}
+                className={style.btn}
+              >
+                cotizar
+              </Button>
+            </Link>
           </div>
         </main>
 
         {/* MEZZANINE */}
-        <div className={style.mezzanine}>
+        <div id='mezzanine' className={style.mezzanine}>
           <div className={style.mezzanineMainText}>
             <section className={style.firstSection}>
               <p>
@@ -179,10 +228,11 @@ function Products() {
                 productos.
               </p>
             </section>
-
-            <Button className={style.btn}>cotizar</Button>
+            <Link href={'/contacto#contacto'}>
+              <Button className={style.btn}>cotizar</Button>
+            </Link>
           </div>
-          <div className={style.mezzanineTitleAndImage}>
+          <div className={style.mezzanineTitleAndCarousel}>
             <section className={style.mezzanineTitleSection}>
               <p>
                 <em>
@@ -193,14 +243,18 @@ function Products() {
               <h2>Mezzanine</h2>
             </section>
 
-            <section className={style.mezzanineMainImgContainer}>
-              <Image src={shark} alt='rack picking' fill />
+            <section className={style.mezzanineCarouselContainer}>
+              <Carousel
+                firstImage={mezzanine1}
+                images={[{ image: mezzanine2, alt: 'mezzanine' }]}
+                carouselId={'carousel3'}
+              />
             </section>
           </div>
         </div>
 
         {/* ANAQUEL */}
-        <div className={style.anaquel}>
+        <div id='anaquel' className={style.anaquel}>
           <div className={style.anaquelTextAndTitle}>
             <div className={style.anaquelText}>
               <h3>Anaquel sin tornillos</h3>
@@ -226,13 +280,21 @@ function Products() {
                 </em>
               </p>
               <h2>Anaqueles</h2>
-              <Button className={style.btn}>cotizar</Button>
+              <Link href={'/contacto#contacto'}>
+                <Button className={style.btn}>cotizar</Button>
+              </Link>
             </section>
           </div>
 
-          <div className={style.anaquelImageAndText}>
-            <section className={style.anaquelImgContainer}>
-              <Image src={shark} alt='rack picking' fill />
+          <div className={style.anaquelCarouselAndText}>
+            <section className={style.anaquelCarouselContainer}>
+              <Carousel
+                firstImage={anaquel1}
+                images={[
+                  { image: anaquel2, alt: 'anaquel sin tornillo tipo AP' },
+                ]}
+                carouselId={'carousel4'}
+              />
             </section>
 
             <section className={style.anaquelText}>
@@ -259,13 +321,12 @@ function Products() {
         </div>
 
         {/* ESTANTERIAS */}
-        <div className={style.estanterias}>
-          <div className={style.estanteriaImageContainer}>
-            <Image
-              className={style.estanteriaImg}
-              src={shark}
-              alt='rack'
-              fill
+        <div id='estanterias' className={style.estanterias}>
+          <div className={style.estanteriaCarouselContainer}>
+            <Carousel
+              firstImage={estanteria1}
+              images={[{ image: scubadiver, alt: 'scuba' }]}
+              carouselId={'carousel5'}
             />
           </div>
 
@@ -288,12 +349,15 @@ function Products() {
               ofrece durabilidad y resistencia. Una opción confiable y accesible
               para optimizar el espacio de almacenamiento en tu negocio.
             </p>
-            <Button
-              className={style.btn}
-              style={{ background: 'white', border: 'none' }}
-            >
-              cotizar
-            </Button>
+
+            <Link href={'/contacto#contacto'}>
+              <Button
+                className={style.btn}
+                style={{ background: 'white', border: 'none' }}
+              >
+                cotizar
+              </Button>
+            </Link>
           </section>
         </div>
       </section>
