@@ -3,6 +3,7 @@ import Image from 'next/image'
 import whale from '@/../public/images/aboutUs/ballena.jpg'
 import shark from '@/../public/images/contact/shark.jpg'
 import scubadiver from '@/../public/images/gallery/2.webp'
+import Link from 'next/link'
 
 function Modal({ title, modalText, modalVisibleState }) {
   return (
@@ -16,7 +17,7 @@ function Modal({ title, modalText, modalVisibleState }) {
       aria-hidden='true'
     >
       <div className='modal-dialog'>
-        <div className='modal-content'>
+        <div className={`${style.modalContent} modal-content`}>
           <div className={`${style.header} modal-header`}>
             <h1 className='modal-title fs-5' id='staticBackdropLabel'>
               {title}
@@ -101,13 +102,15 @@ function Modal({ title, modalText, modalVisibleState }) {
             </div>
           </div>
           <div className={`${style.footer} modal-footer`}>
-            <button
-              type='button'
-              className='btn btn-secondary'
-              data-bs-dismiss='modal'
-            >
-              Cotizar
-            </button>
+            <Link href={'/contacto#contacto'}>
+              <button
+                type='button'
+                className='btn btn-secondary'
+                data-bs-dismiss='modal'
+              >
+                Cotizar
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <VideoSection
-        video={'./video/surfVideo.mp4'}
+        video={'./video/home/homeVideo.mp4'}
         title={'GUERMAR MUEBLES METALICOS'}
         subtitle={'Soluciones para todo tipo de necesidades'}
       />

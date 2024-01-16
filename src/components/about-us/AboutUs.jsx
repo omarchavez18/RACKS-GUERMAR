@@ -2,7 +2,7 @@
 
 import style from './aboutUs.module.scss'
 import Image from 'next/image'
-import ballena from '@/../public/images/aboutUs/ballena.jpg'
+import quienesSomos1 from '@/../public/images/aboutUs/quienesSomos1.jpg'
 
 function AboutUs() {
   return (
@@ -30,14 +30,19 @@ function AboutUs() {
 
         <section className={style.imageContainer}>
           <div className={style.imageDiv}>
-            <Image src={ballena} alt='ballena' fill />
+            <Image src={quienesSomos1} alt='ballena' fill />
           </div>
         </section>
       </div>
 
       <div className={style.historyContainer}>
         <div className={style.historyImageContainer}>
-          <Image className={style.historyImg} src={ballena} alt='whale' fill />
+          <Image
+            className={style.historyImg}
+            src={quienesSomos1}
+            alt='whale'
+            fill
+          />
         </div>
 
         <section className={style.historyTitle}>
@@ -63,7 +68,7 @@ function AboutUs() {
           para exhibición y almacenaje en los comercios emergentes de la ciudad
           de León.
           <br />
-          <hr />
+          <br />
           En 1966, formalizaron su compromiso con la fabricación de muebles
           metálicos y fundaron la empresa Muebles Metálicos GUER-MAR,
           nombrándola en honor a las primeras letras de los apellidos Guerra y

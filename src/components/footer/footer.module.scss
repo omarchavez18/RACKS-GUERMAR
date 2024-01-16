@@ -79,7 +79,11 @@
     margin-bottom: 1rem;
   }
 }
-
+@media (max-width: 400px) {
+  .animates {
+    flex-direction: column;
+  }
+}
 @media (max-width: 786px) {
   .logo.logo {
     width: 14rem;

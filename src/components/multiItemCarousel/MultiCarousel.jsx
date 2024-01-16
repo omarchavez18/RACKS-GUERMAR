@@ -1,7 +1,7 @@
 'use client'
 import style from './multiCarousel.module.scss'
 import Card from '../card/Card'
-import React, { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -13,8 +13,11 @@ import 'swiper/css/navigation'
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules'
-import whale from '@/../public/images/aboutUs/ballena.jpg'
-import shark from '@/../public/images/contact/shark.jpg'
+import escalera1 from '@/../public/images/products/escalera/escalera1.jpg'
+import mesa1 from '@/../public/images/products/mesas/mesa1.jpg'
+import cajon1 from '@/../public/images/products/cajones/cajonPicoDePato3.jpg'
+import elevador1 from '@/../public/images/products/elevador/elevador1.jpg'
+
 import scubadiver from '@/../public/images/gallery/2.webp'
 import Modal from '../modal/Modal'
 
@@ -22,14 +25,40 @@ const MultiCarousel = () => {
   const [modalTitle, setModalTitle] = useState('')
   const [modalText, setModalText] = useState('')
   const [modalVisible, setModalVisible] = useState(false)
+  const [slides, setSlides] = useState(4)
+
+  //
+
+  useEffect(() => {
+    function indicateSlides() {
+      if (window.innerWidth <= 500) {
+        setSlides(2)
+      } else if (window.innerWidth <= 768) {
+        setSlides(3)
+      } else if (window.innerWidth > 768) {
+        setSlides(4)
+      }
+    }
+
+    window.addEventListener('load', indicateSlides())
+    window.addEventListener('resize', indicateSlides)
+    return () => {
+      window.removeEventListener('load', indicateSlides)
+      window.removeEventListener('resize', indicateSlides)
+    }
+  }, [])
+
+  //
 
   function changeModalVisiblity() {
     setModalVisible(false)
   }
 
-  modalVisible
-    ? (document.body.style.overflow = 'hidden')
-    : (document.body.style.overflow = 'auto')
+  useEffect(() => {
+    modalVisible
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = 'auto')
+  }, [modalVisible])
 
   let titles = [
     'Mesas de trabajo',
@@ -63,7 +92,8 @@ const MultiCarousel = () => {
 
       <Swiper
         className={`${style.swiper} mySwiper`}
-        slidesPerView={4}
+        id='otrosProductos'
+        slidesPerView={slides}
         loop={true}
         pagination={{
           clickable: true,
@@ -76,11 +106,11 @@ const MultiCarousel = () => {
             click={() => {
               changeModalInfo(0)
             }}
-            image={shark}
+            image={mesa1}
             imageAlt='mesas de trabajo'
             title='Mesas de trabajo'
             subtitle='Fabricadas con materiales de alta resistencia'
-            buttonText='ver Mesas de trabajo'
+            buttonText='ver mesas de trabajo'
           />
         </SwiperSlide>
 
@@ -89,37 +119,40 @@ const MultiCarousel = () => {
             click={() => {
               changeModalInfo(1)
             }}
-            image={whale}
+            image={escalera1}
             imageAlt='escaleras industriales'
             title='Escaleras Industriales'
             subtitle='Fabricadas a la medida de tus necesidades'
             buttonText='ver escaleras'
           />
         </SwiperSlide>
+
         <SwiperSlide className={style.swiperSlide}>
           <Card
             click={() => {
               changeModalInfo(2)
             }}
-            image={scubadiver}
+            image={cajon1}
             imageAlt='cajones hormeros'
             title='Cajones hormeros y pico de pato'
             subtitle='solución para almacenar productos sueltos o a granel'
             buttonText='ver cajones'
           />
         </SwiperSlide>
+
         <SwiperSlide className={style.swiperSlide}>
           <Card
             click={() => {
               changeModalInfo(3)
             }}
-            image={shark}
+            image={elevador1}
             imageAlt='elevadores industriales'
             title='Elevadores Industriales'
             subtitle='solución para mercancia en espacios de doble o triple altura'
             buttonText='ver elevadores'
           />
         </SwiperSlide>
+
         <SwiperSlide className={style.swiperSlide}>
           <Card
             click={() => {

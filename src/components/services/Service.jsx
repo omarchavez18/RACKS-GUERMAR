@@ -1,6 +1,13 @@
 import Image from 'next/image'
 import style from './service.module.scss'
 import shark from '@/../public/images/contact/shark.jpg'
+import helmetIcon from '@/../public/icons/servicios/helmet.svg'
+import toolsIcon from '@/../public/icons/servicios/tool.svg'
+import brushIcon from '@/../public/icons/servicios/brush.svg'
+import nutsIcon from '@/../public/icons/servicios/nuts.svg'
+import callcenterIcon from '@/../public/icons/servicios/callcenter.svg'
+import cogIcon from '@/../public/icons/servicios/cog.svg'
+import services from '@/../public/images/service/quienesSomos.jpg'
 
 const Service = () => {
   return (
@@ -19,6 +26,13 @@ const Service = () => {
         <section className={style.servicesContainer}>
           <div className={style.firstSection}>
             <div className={style.service1}>
+              <Image
+                className={style.icon}
+                src={helmetIcon}
+                alt='casco'
+                width={50}
+                height={50}
+              />
               <p className={style.title}>Mantenimiento de rack</p>
               <p className={style.text}>
                 Renovamos la estética de tus racks con nuestro servicio de
@@ -32,6 +46,13 @@ const Service = () => {
               </p>
             </div>
             <div className={style.service2}>
+              <Image
+                className={style.icon}
+                src={toolsIcon}
+                alt='herramientas'
+                width={50}
+                height={50}
+              />
               <p className={style.title}>Instalación y reubicación de rack</p>
               <p className={style.text}>
                 ¿Tu bodega se ha quedado pequeña? ¿Estás en busca de un nuevo
@@ -46,6 +67,13 @@ const Service = () => {
 
           <div className={style.secondSection}>
             <div className={style.service3}>
+              <Image
+                className={style.icon}
+                src={nutsIcon}
+                alt='tuercas'
+                width={50}
+                height={50}
+              />
               <p className={style.title}>Sustitución de piezas</p>
               <p className={style.text}>
                 ¿Sientes que tu espacio actual ya no se ajusta a tus necesidades
@@ -58,6 +86,13 @@ const Service = () => {
               </p>
             </div>
             <div className={style.service4}>
+              <Image
+                className={style.icon}
+                src={brushIcon}
+                alt='pintura'
+                width={50}
+                height={50}
+              />
               <p className={style.title}>Maquilado de pintura</p>
               <p className={style.text}>
                 ¿Buscas asistencia para pintar tus piezas metálicas con pintura
@@ -72,6 +107,13 @@ const Service = () => {
 
           <div className={style.thirdSection}>
             <div className={style.service5}>
+              <Image
+                className={style.icon}
+                src={cogIcon}
+                alt='dobles'
+                width={50}
+                height={50}
+              />
               <p className={style.title}>Maquila de corte y dobles</p>
               <p className={style.text}>
                 ¿Enfrentas algún problema con tu maquinaria justo cuando
@@ -84,6 +126,13 @@ const Service = () => {
               </p>
             </div>
             <div className={style.service6}>
+              <Image
+                className={style.icon}
+                src={callcenterIcon}
+                alt='asesoria'
+                width={50}
+                height={50}
+              />
               <p className={style.title}>Asesoría en logística</p>
               <p className={style.text}>
                 ¿Buscas optimizar tus procesos productivos y necesitas la
@@ -100,7 +149,7 @@ const Service = () => {
         </section>
 
         <section className={style.imageContainer}>
-          <Image className={style.img} src={shark} alt='rack' fill />
+          <Image className={style.img} src={services} alt='rack' fill />
         </section>
       </div>
     </div>

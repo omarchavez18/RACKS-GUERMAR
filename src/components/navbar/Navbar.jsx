@@ -25,10 +25,7 @@ const Navbar = () => {
 
       <div className={style.firstSection}>
         <section>
-          <a
-            href={'https://www.instagram.com/guermar.fabricanterack/'}
-            target='_blank'
-          >
+          <a href={'https://www.instagram.com/racks.guermar/'} target='_blank'>
             <Image
               src={instagramIcon}
               alt='instagram icon'
@@ -49,7 +46,7 @@ const Navbar = () => {
               width={20}
             />
           </a>
-          <a href={'https://www.facebook.com/Guermarmuebles'} target='_blank'>
+          <a href={'https://www.facebook.com/Guermaracks'} target='_blank'>
             <Image
               src={facebookIcon}
               alt='facebook icon'
