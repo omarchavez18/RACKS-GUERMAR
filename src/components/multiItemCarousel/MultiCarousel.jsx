@@ -1,4 +1,5 @@
 'use client'
+// @refresh reset
 import style from './multiCarousel.module.scss'
 import Card from '../card/Card'
 import { useEffect, useState } from 'react'
@@ -13,10 +14,20 @@ import 'swiper/css/navigation'
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules'
-import escalera1 from '@/../public/images/products/escalera/escalera1.jpg'
 import mesa1 from '@/../public/images/products/mesas/mesa1.jpg'
+import mesa2 from '@/../public/images/products/mesas/mesa2.jpg'
+
+import escalera1 from '@/../public/images/products/escalera/escalera1.jpg'
+
 import cajon1 from '@/../public/images/products/cajones/cajonPicoDePato3.jpg'
+import cajon2 from '@/../public/images/products/cajones/cajonPicoDePato1.jpg'
+import cajon3 from '@/../public/images/products/cajones/cajonPicoDePato2.jpg'
+import cajon4 from '@/../public/images/products/cajones/cajonPicoDePato4.jpg'
+import cajon5 from '@/../public/images/products/cajones/cajonPicoDePato5.jpg'
+
 import elevador1 from '@/../public/images/products/elevador/elevador1.jpg'
+import elevador2 from '@/../public/images/products/elevador/elevador2.jpg'
+import elevador3 from '@/../public/images/products/elevador/elevador3.jpg'
 
 import scubadiver from '@/../public/images/gallery/2.webp'
 import Modal from '../modal/Modal'
@@ -24,10 +35,9 @@ import Modal from '../modal/Modal'
 const MultiCarousel = () => {
   const [modalTitle, setModalTitle] = useState('')
   const [modalText, setModalText] = useState('')
+  const [otherImages, setOtherImages] = useState([])
   const [modalVisible, setModalVisible] = useState(false)
   const [slides, setSlides] = useState(4)
-
-  //
 
   useEffect(() => {
     function indicateSlides() {
@@ -47,8 +57,6 @@ const MultiCarousel = () => {
       window.removeEventListener('resize', indicateSlides)
     }
   }, [])
-
-  //
 
   function changeModalVisiblity() {
     setModalVisible(false)
@@ -76,10 +84,33 @@ const MultiCarousel = () => {
     'Nuestro Gabinete Universal se presenta como la elección óptima para aquellos entornos que demandan almacenamiento seguro. Perfecto para oficinas y pequeños almacenes, este gabinete ofrece un espacio cerrado esencial. Asegura la protección de objetos delicados o de valor que requieren un manejo especial. Nuestro gabinete se destaca al permitir su aseguramiento mediante llave o candado, proporcionando una capa adicional de seguridad. Robusto y resistente, garantiza la integridad de tus productos almacenados, proporcionando tranquilidad y confianza en la gestión de tus pertenencias.',
   ]
 
+  let ImagesArray = [
+    [
+      { image: mesa1, alt: 'mesa' },
+      { image: mesa2, alt: 'mesa' },
+    ],
+
+    [{ image: escalera1, alt: 'escalera' }],
+    [
+      { image: cajon1, alt: 'cajon pico de pato' },
+      { image: cajon2, alt: 'cajon pico de pato' },
+      { image: cajon3, alt: 'cajon pico de pato' },
+      { image: cajon4, alt: 'cajon pico de pato' },
+      { image: cajon5, alt: 'cajon pico de pato' },
+    ],
+    [
+      { image: elevador1, alt: 'elevador industrial' },
+      { image: elevador2, alt: 'elevador industrial' },
+      { image: elevador3, alt: 'elevador industrial' },
+    ],
+    [{ image: elevador1, alt: 'elevador indsutrial' }],
+  ]
+
   function changeModalInfo(id) {
     setModalTitle(titles[id])
     setModalText(bodyText[id])
     setModalVisible(true)
+    setOtherImages(ImagesArray[id])
   }
 
   return (
@@ -88,6 +119,7 @@ const MultiCarousel = () => {
         modalVisibleState={changeModalVisiblity}
         title={modalTitle}
         modalText={modalText}
+        images={otherImages}
       />
 
       <Swiper
