@@ -1,11 +1,26 @@
-import style from './modal.module.scss'
+'use client'
+// @refresh reset
+import { useState } from 'react'
+import Carousel from 'react-bootstrap/Carousel'
 import Image from 'next/image'
-import whale from '@/../public/images/aboutUs/ballena.jpg'
-import shark from '@/../public/images/contact/shark.jpg'
-import scubadiver from '@/../public/images/gallery/2.webp'
+import style from './modal.module.scss'
 import Link from 'next/link'
 
-function Modal({ title, modalText, modalVisibleState }) {
+function Modal({ title, modalText, modalVisibleState, images }) {
+  const [index, setIndex] = useState(0)
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex)
+  }
+
+  function handleCloseCarousel() {
+    setIndex(0)
+  }
+
+  function closeButton() {
+    return modalVisibleState, handleCloseCarousel()
+  }
+
   return (
     <div
       className={`${style.container} modal fade modal-xl`}
@@ -27,74 +42,31 @@ function Modal({ title, modalText, modalVisibleState }) {
               type='button'
               data-bs-dismiss='modal'
               aria-label='Close'
-              onClick={modalVisibleState}
+              onClick={closeButton}
             />
           </div>
 
           <div className={`${style.body} modal-body`}>
             <section className={`${style.imgContainer}`}>
-              {/* carousel */}
-              <div
-                id='carouselExampleFade'
-                className={`${style.carouselContainer} carousel slide carousel-fade`}
+              <Carousel
+                fade
+                interval={null}
+                activeIndex={index}
+                onSelect={handleSelect}
+                className={style.carousel}
               >
-                <div className={`${style.innerContainer} carousel-inner`}>
-                  <div className={`${style.element} carousel-item active`}>
-                    <div style={{ width: '100%' }}>
+                {images.map((image, i) => {
+                  return (
+                    <Carousel.Item className='h-100' key={i}>
                       <Image
-                        src={shark}
-                        className='d-block w-100'
-                        alt='...'
-                        fill
+                        className='d-block w-100 h-100 object-fit-contain'
+                        src={image.image}
+                        alt={image.alt}
                       />
-                    </div>
-                  </div>
-                  <div className={`${style.element} carousel-item `}>
-                    <div style={{ width: '100%' }}>
-                      <Image
-                        src={whale}
-                        className='d-block w-100'
-                        alt='...'
-                        fill
-                      />
-                    </div>
-                  </div>
-                  <div className={`${style.element} carousel-item `}>
-                    <div style={{ width: '100%' }}>
-                      <Image
-                        src={scubadiver}
-                        className='d-block w-100'
-                        alt='...'
-                        fill
-                      />
-                    </div>
-                  </div>
-                </div>
-                <button
-                  className='carousel-control-prev'
-                  type='button'
-                  data-bs-target='#carouselExampleFade'
-                  data-bs-slide='prev'
-                >
-                  <span
-                    className='carousel-control-prev-icon'
-                    aria-hidden='true'
-                  ></span>
-                  <span className='visually-hidden'>Previous</span>
-                </button>
-                <button
-                  className='carousel-control-next'
-                  type='button'
-                  data-bs-target='#carouselExampleFade'
-                  data-bs-slide='next'
-                >
-                  <span
-                    className='carousel-control-next-icon'
-                    aria-hidden='true'
-                  ></span>
-                  <span className='visually-hidden'>Next</span>
-                </button>
-              </div>
+                    </Carousel.Item>
+                  )
+                })}
+              </Carousel>
             </section>
 
             <div className={`${style.textContainer}`}>

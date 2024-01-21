@@ -1,4 +1,5 @@
 'use client'
+// @refresh reset
 import style from './products.module.scss'
 import Image from 'next/image'
 import rackCarga1 from '@/../public/images/products/rackSelectivo/rackCarga1.jpg'
@@ -21,9 +22,7 @@ import rackPicking2 from '@/../public/images/products/rackPicking/rackPicking2.j
 import rackPicking3 from '@/../public/images/products/rackPicking/rackPicking3.jpg'
 
 import estanteria1 from '@/../public/images/products/estanterias/estanteriaConTornillo.jpg'
-import whale from '@/../public/images/aboutUs/ballena.jpg'
 
-import scubadiver from '@/../public/images/gallery/2.webp'
 import VideoSection from '../videoSection/VideoSection'
 import qualityIcon from '@/../public/icons/products/qualityIcon.svg'
 import toolsIcon from '@/../public/icons/products/tools.svg'
@@ -325,7 +324,7 @@ function Products() {
           <div className={style.estanteriaCarouselContainer}>
             <Carousel
               firstImage={estanteria1}
-              images={[{ image: scubadiver, alt: 'scuba' }]}
+              images={[]}
               carouselId={'carousel5'}
             />
           </div>

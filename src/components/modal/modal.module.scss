@@ -12,12 +12,20 @@
       width: 60%;
       height: 23rem;
 
+      .arrow {
+        background-color: black;
+        border-radius: 50%;
+        width: 2rem;
+      }
       .carouselContainer {
         height: 100%;
         .innerContainer {
           height: 100%;
           .element {
             height: 100%;
+            img {
+              object-fit: cover;
+            }
           }
         }
       }
@@ -35,6 +43,20 @@
       p {
         height: 22rem;
       }
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .carousel > div:nth-child(2) {
+      height: 100%;
+    }
+
+    .carousel a span:nth-child(1) {
+      background-color: black;
+      border-radius: 50%;
     }
   }
   .btnClose:hover {
