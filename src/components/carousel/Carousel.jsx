@@ -1,3 +1,4 @@
+// @refresh reset
 import Image from 'next/image'
 import style from './carousel.module.scss'
 const Carousel = ({ firstImage, images, carouselId }) => {
