@@ -29,7 +29,6 @@ import elevador1 from '@/../public/images/products/elevador/elevador1.jpg'
 import elevador2 from '@/../public/images/products/elevador/elevador2.jpg'
 import elevador3 from '@/../public/images/products/elevador/elevador3.jpg'
 
-import scubadiver from '@/../public/images/gallery/2.webp'
 import Modal from '../modal/Modal'
 
 const MultiCarousel = () => {
@@ -190,7 +189,7 @@ const MultiCarousel = () => {
             click={() => {
               changeModalInfo(4)
             }}
-            image={scubadiver}
+            image={elevador2}
             imageAlt='gabinete'
             title='Gabinete Universal'
             subtitle='solución ideal para almacenamiento seguro'

@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import style from './service.module.scss'
-import shark from '@/../public/images/contact/shark.jpg'
 import helmetIcon from '@/../public/icons/servicios/helmet.svg'
 import toolsIcon from '@/../public/icons/servicios/tool.svg'
 import brushIcon from '@/../public/icons/servicios/brush.svg'
