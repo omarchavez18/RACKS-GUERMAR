@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <VideoSection
         video={'./video/home/homeVideo.mp4'}
-        title={'GUERMAR MUEBLES METALICOS'}
+        title={'RACKS GUERMAR'}
         subtitle={'Soluciones para todo tipo de necesidades'}
       />
       <Gallery />

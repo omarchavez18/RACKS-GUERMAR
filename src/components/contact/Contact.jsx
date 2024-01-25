@@ -7,7 +7,7 @@ import telephoneIcon from '@/../public/animatedIcons/telephone.svg'
 import whatsappColorIcon from '@/../src/../public/icons/colorWhatsappIcon.svg'
 import locationIcon from '@/../public/icons/pinLocation.svg'
 import mailIcon from '@/../public/icons/mail.svg'
-import shark from '@/../public/images/contact/shark.jpg'
+import worker from '@/../public/images/contact/worker.jpg'
 import style from './contact.module.scss'
 import facebook from '@/../public/icons/colorFacebookIcon.svg'
 import instagram from '@/../public/icons/colorInstagramIcon.svg'
@@ -18,7 +18,7 @@ function Contacto() {
   return (
     <div className={style.container}>
       <div className={style.imageContainer}>
-        <Image src={shark} alt='contact' fill />
+        <Image src={worker} alt='contact' fill />
       </div>
 
       <TitleSeparator title={'CONTACTO'} />
