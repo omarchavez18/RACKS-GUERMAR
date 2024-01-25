@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Navbar from '@/components/navbar/Navbar'
 import BootstrapClient from '@/components/bootstrapClient/BootstrapClient'
 import Footer from '@/components/footer/Footer'
+import FloatingButton from '@/components/floatingButton/FloatingButton'
 
 export const metadata = {
   title: 'Racks Guermar | Inicio',
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <BootstrapClient />
+        <FloatingButton />
         <Footer />
       </body>
     </html>
