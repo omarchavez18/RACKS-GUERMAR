@@ -13,7 +13,6 @@ const Faq = () => {
         ¡Lo que todo cliente quiere saber!
       </h5>
       <hr />
-      {/*  */}
 
       <div
         data-aos='fade-down'
