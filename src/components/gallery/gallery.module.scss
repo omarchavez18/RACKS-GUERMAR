@@ -119,9 +119,10 @@
       display: block;
     }
     .btnPop {
-      width: 5rem;
-      height: 5rem;
+      width: fit-content;
+      height: 6rem;
       font-size: xx-large;
+      padding: 0.5rem;
     }
   }
 }
