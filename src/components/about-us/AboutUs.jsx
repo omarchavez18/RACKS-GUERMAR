@@ -10,9 +10,9 @@ function AboutUs() {
       <div className={style.titleAndImgContainer}>
         <section className={style.titleContainer}>
           <section>
-            <h2>Sobre Nosotros</h2>
+            <h2 data-aos='fade-up'>Sobre Nosotros</h2>
 
-            <p>
+            <p data-aos='fade-up' data-aos-delay='400'>
               {' '}
               En Guermar empresa 100% mexicana, somos fabricantes con
               experiencia de más de 30 años en soluciones de almacenamiento.
@@ -30,7 +30,12 @@ function AboutUs() {
 
         <section className={style.imageContainer}>
           <div className={style.imageDiv}>
-            <Image src={quienesSomos1} alt='ballena' fill />
+            <Image
+              data-aos='fade-down'
+              src={quienesSomos1}
+              alt='guermar'
+              fill
+            />
           </div>
         </section>
       </div>
@@ -38,21 +43,29 @@ function AboutUs() {
       <div className={style.historyContainer}>
         <div className={style.historyImageContainer}>
           <Image
+            data-aos='fade-right'
             className={style.historyImg}
             src={quienesSomos1}
-            alt='whale'
+            alt='guermar'
             fill
           />
         </div>
 
         <section className={style.historyTitle}>
-          <h3>Nuestra historia</h3>
-          <p> Marzo 1987 - León, Guanajuato.</p>
+          <h3 data-aos='fade-left'>Nuestra historia</h3>
+          <p data-aos='fade-left' data-aos-delay='200'>
+            {' '}
+            Marzo 1987 - León, Guanajuato.
+          </p>
         </section>
       </div>
 
       <div className={style.historyContent}>
-        <p>
+        <p
+          data-aos='fade-down'
+          data-aos-easing='linear'
+          data-aos-duration='1000'
+        >
           Muebles Guer-Mar, una empresa leonesa con raíces profundas y una
           historia que ha evolucionado con el tiempo. A pesar de que León era
           reconocida principalmente por la fabricación de calzado, el Sr.
@@ -89,9 +102,15 @@ function AboutUs() {
       <div className={style.companyGeneralValuesContainer}>
         <div className={style.companyValuesContainer}>
           <section className={style.valuesText}>
-            <h3>MISIÓN</h3>
+            <h3 data-aos='fade-down' data-aos-easing='linear'>
+              MISIÓN
+            </h3>
             <hr />
-            <p>
+            <p
+              data-aos='fade-down'
+              data-aos-easing='linear'
+              data-aos-delay='200'
+            >
               En GUERMAR, diseñamos, fabricamos y proporcionamos soluciones en
               almacenamiento de la más alta calidad para convertir el espacio
               vertical de nuestros clientes. Nos comprometemos a ofrecer
@@ -109,9 +128,15 @@ function AboutUs() {
         <div className={style.companyValuesContainer}>
           <section className={style.valuesContainerImg}></section>
           <section className={style.valuesText}>
-            <h3>VISIÓN</h3>
+            <h3 data-aos='fade-left' data-aos-easing='linear'>
+              VISIÓN
+            </h3>
             <hr />
-            <p>
+            <p
+              data-aos='fade-left'
+              data-aos-easing='linear'
+              data-aos-delay='200'
+            >
               GUERMAR, busca ser líderes en la industria de fabricación de
               muebles metálicos para el almacenamiento, reconocidos por nuestra
               excelencia en diseño, calidad y servicio al cliente. Aspiramos a
@@ -127,9 +152,11 @@ function AboutUs() {
 
         <div className={style.companyValuesContainer}>
           <section className={style.valuesText}>
-            <h3>VALORES</h3>
+            <h3 data-aos='fade-up' data-aos-easing='linear'>
+              VALORES
+            </h3>
             <hr />
-            <p>
+            <p data-aos='fade-up' data-aos-easing='linear' data-aos-delay='200'>
               Cooperación y trabajo en equipo, Confianza de nuestros clientes y
               de todos los que integramos la empresa, Servicio, Lealtad,
               Positivismo, Compromiso, Seguridad, Respeto, Honestidad.

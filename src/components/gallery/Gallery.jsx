@@ -3,7 +3,6 @@ import Image from 'next/image'
 import style from './gallery.module.scss'
 import Link from 'next/link'
 import TitleSeparator from '../titleSeparator/TitleSeparator'
-
 import rackCarga3 from '@/../public/images/products/rackSelectivo/rackCarga3.jpg'
 import mezzanine1 from '@/../public/images/products/mezzanine/mezzanine1.jpg'
 import anaquel1 from '@/../public/images/products/anaquel/anaquelSinTornilloAp.jpeg'
@@ -16,11 +15,21 @@ function Gallery() {
   return (
     <>
       <TitleSeparator title={'PRODUCTOS PRINCIPALES'} />
-      <section className={style.container}>
-        <div className={classNames(style.image1, style.image)}>
+      <section
+        data-aos='fade-right'
+        data-aos-offset='300'
+        data-aos-easing='ease-in-quad'
+        className={style.container}
+      >
+        <div
+          data-aos-anchor-placement='center-center'
+          className={classNames(style.image1, style.image)}
+        >
           <Image src={rackCarga3} alt='rack selectivo' fill />
           <Link href={'/productos#rackSelectivo'}>
-            <section className={style.btnPop}>RACK SELECTIVO</section>
+            <section className={style.btnPop}>
+              <p>RACK SELECTIVO</p>
+            </section>
           </Link>
         </div>
 
@@ -34,7 +43,9 @@ function Gallery() {
         <div className={classNames(style.image3, style.image)}>
           <Image src={anaquel1} alt='image3' fill />
           <Link href={'/productos#anaquel'}>
-            <section className={style.btnPop}>ANAQUELES</section>
+            <section className={style.btnPop}>
+              <p>ANAQUELES</p>
+            </section>
           </Link>
         </div>
 

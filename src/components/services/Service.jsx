@@ -13,9 +13,9 @@ const Service = () => {
     <div className={style.container}>
       <section className={style.titleContainer}>
         <p>
-          <em>Nuestros servicios</em>
+          <em data-aos='fade-up-right'>Nuestros servicios</em>
         </p>
-        <h1>
+        <h1 data-aos='fade-up-right' data-aos-delay='200'>
           Ofrecemos diversos servicios
           <br /> para satisfacer tus necesidades
         </h1>
@@ -26,14 +26,21 @@ const Service = () => {
           <div className={style.firstSection}>
             <div className={style.service1}>
               <Image
+                data-aos='fade-up'
                 className={style.icon}
                 src={helmetIcon}
                 alt='casco'
                 width={50}
                 height={50}
               />
-              <p className={style.title}>Mantenimiento de rack</p>
-              <p className={style.text}>
+              <p
+                data-aos='fade-up'
+                data-aos-delay='200'
+                className={style.title}
+              >
+                Mantenimiento de rack
+              </p>
+              <p data-aos='fade-up' data-aos-delay='300' className={style.text}>
                 Renovamos la estética de tus racks con nuestro servicio de
                 mantenimiento. Dale un nuevo aspecto a tus racks usados mediante
                 la aplicación de un segundo acabado de pintura. Además, nos
@@ -46,14 +53,21 @@ const Service = () => {
             </div>
             <div className={style.service2}>
               <Image
+                data-aos='fade-up'
                 className={style.icon}
                 src={toolsIcon}
                 alt='herramientas'
                 width={50}
                 height={50}
               />
-              <p className={style.title}>Instalación y reubicación de rack</p>
-              <p className={style.text}>
+              <p
+                data-aos='fade-up'
+                data-aos-delay='200'
+                className={style.title}
+              >
+                Instalación y reubicación de rack
+              </p>
+              <p data-aos='fade-up' data-aos-delay='300' className={style.text}>
                 ¿Tu bodega se ha quedado pequeña? ¿Estás en busca de un nuevo
                 espacio para tu almacén? Nosotros te brindamos apoyo completo,
                 desde el desmontaje de tu rack hasta su armado en tu nueva
@@ -67,14 +81,21 @@ const Service = () => {
           <div className={style.secondSection}>
             <div className={style.service3}>
               <Image
+                data-aos='fade-up'
                 className={style.icon}
                 src={nutsIcon}
                 alt='tuercas'
                 width={50}
                 height={50}
               />
-              <p className={style.title}>Sustitución de piezas</p>
-              <p className={style.text}>
+              <p
+                data-aos='fade-up'
+                data-aos-delay='200'
+                className={style.title}
+              >
+                Sustitución de piezas
+              </p>
+              <p data-aos='fade-up' data-aos-delay='300' className={style.text}>
                 ¿Sientes que tu espacio actual ya no se ajusta a tus necesidades
                 y estás pensando en realizar un cambio en el diseño? En Guermar,
                 estamos aquí para guiarte en el rediseño de tu espacio y
@@ -86,14 +107,21 @@ const Service = () => {
             </div>
             <div className={style.service4}>
               <Image
+                data-aos='fade-up'
                 className={style.icon}
                 src={brushIcon}
                 alt='pintura'
                 width={50}
                 height={50}
               />
-              <p className={style.title}>Maquilado de pintura</p>
-              <p className={style.text}>
+              <p
+                data-aos='fade-up'
+                data-aos-delay='200'
+                className={style.title}
+              >
+                Maquilado de pintura
+              </p>
+              <p data-aos='fade-up' data-aos-delay='300' className={style.text}>
                 ¿Buscas asistencia para pintar tus piezas metálicas con pintura
                 electrostática? En Guermar, disponemos de un horno con capacidad
                 para hasta 2 toneladas por lote. Acércate a nosotros y logra el
@@ -107,14 +135,21 @@ const Service = () => {
           <div className={style.thirdSection}>
             <div className={style.service5}>
               <Image
+                data-aos='fade-up'
                 className={style.icon}
                 src={cogIcon}
                 alt='dobles'
                 width={50}
                 height={50}
               />
-              <p className={style.title}>Maquila de corte y dobles</p>
-              <p className={style.text}>
+              <p
+                data-aos='fade-up'
+                data-aos-delay='200'
+                className={style.title}
+              >
+                Maquila de corte y dobles
+              </p>
+              <p data-aos='fade-up' data-aos-delay='300' className={style.text}>
                 ¿Enfrentas algún problema con tu maquinaria justo cuando
                 necesitas entregar mercancía de forma urgente? Nosotros estamos
                 aquí para apoyarte con nuestros servicios de maquilado,
@@ -126,14 +161,21 @@ const Service = () => {
             </div>
             <div className={style.service6}>
               <Image
+                data-aos='fade-up'
                 className={style.icon}
                 src={callcenterIcon}
                 alt='asesoria'
                 width={50}
                 height={50}
               />
-              <p className={style.title}>Asesoría en logística</p>
-              <p className={style.text}>
+              <p
+                data-aos='fade-up'
+                data-aos-delay='200'
+                className={style.title}
+              >
+                Asesoría en logística
+              </p>
+              <p data-aos='fade-up' data-aos-delay='300' className={style.text}>
                 ¿Buscas optimizar tus procesos productivos y necesitas la
                 experiencia de un especialista en productividad? Estamos aquí
                 para ayudarte a perfeccionar la logística de tu almacén y
@@ -148,7 +190,13 @@ const Service = () => {
         </section>
 
         <section className={style.imageContainer}>
-          <Image className={style.img} src={services} alt='rack' fill />
+          <Image
+            data-aos='fade-up'
+            className={style.img}
+            src={services}
+            alt='rack'
+            fill
+          />
         </section>
       </div>
     </div>

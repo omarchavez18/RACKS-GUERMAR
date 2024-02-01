@@ -1,5 +1,5 @@
+'use client'
 //@refresh reset
-import Li from '../listItem/Li'
 import Image from 'next/image'
 import style from './principalClients.module.scss'
 import ade from '@/../public/images/clients/ADE100.webp'
@@ -34,15 +34,41 @@ const PrincipalClients = () => {
   return (
     <div className={style.container}>
       <div className={style.title}>
-        <Image src={logo} alt='logo' />
-        <h2>Nuestros Clientes</h2>
-        <p>Conozca algunos de nuestros clientes satisfechos</p>
+        <Image
+          data-aos='fade-down'
+          data-aos-easing='linear'
+          data-aos-duration='1000'
+          src={logo}
+          alt='logo'
+        />
+
+        <h2
+          data-aos='fade-up'
+          data-aos-easing='linear'
+          data-aos-duration='1000'
+        >
+          Nuestros Clientes
+        </h2>
+
+        <p
+          data-aos='fade-down'
+          data-aos-easing='linear'
+          data-aos-duration='1000'
+        >
+          Conozca algunos de nuestros clientes satisfechos
+        </p>
       </div>
       {/*  */}
       <section className={style.imagesSection}>
         {clients.map((client, i) => {
           return (
-            <div className={style.imageContainer} key={i}>
+            <div
+              data-aos='fade-down'
+              data-aos-easing='linear'
+              data-aos-duration='1000'
+              className={style.imageContainer}
+              key={i}
+            >
               <Image src={client} alt='' fill />
             </div>
           )

@@ -1,5 +1,4 @@
 'use client'
-import React from 'react'
 import style from './floatingButton.module.scss'
 import { useState } from 'react'
 import Image from 'next/image'
@@ -20,7 +19,12 @@ const FloatingButton = () => {
   }
 
   return (
-    <div className={style.floatingButtonContainer}>
+    <div
+      data-aos='flip-up'
+      data-aos-delay='1000'
+      data-aos-duration='2000'
+      className={style.floatingButtonContainer}
+    >
       <button
         className={color ? style.floatingButton : style.clickedBtn}
         onClick={toggleBottons}
