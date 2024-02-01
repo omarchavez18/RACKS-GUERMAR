@@ -14,7 +14,7 @@ import mezzanine1 from '@/../public/images/products/mezzanine/mezzanine1.jpg'
 import mezzanine2 from '@/../public/images/products/mezzanine/mezzanine2.jpg'
 
 import anaquel1 from '@/../public/images/products/anaquel/anaquelSinTornilloAp.jpeg'
-import anaquel2 from '@/../public/images/products/anaquel/anaquelTipoAp.png'
+import anaquel2 from '@/../public/images/products/anaquel/anaquelTipoAp.jpg'
 
 import rackPicking1 from '@/../public/images/products/rackPicking/rackPicking1.jpg'
 import rackPicking2 from '@/../public/images/products/rackPicking/rackPicking2.jpg'
