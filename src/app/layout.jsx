@@ -12,10 +12,11 @@ export const metadata = {
     'Somos fabricantes con experiencia de más de 30 años en soluciones de almacenamiento. Ofrecemos una amplia gama de racks y estanterías metálicas diseñadas para maximizar la eficiencia y el espacio en tu negocio.',
 
   icons: {
-    icon: ['/favicon.ico?v=4'],
+    icon: ['/favicon.ico?v=1'],
     apple: ['/apple-touch-icon.png'],
     shortcut: ['/apple-touch-icon.png'],
   },
+  manifest: '/site.webmanifest',
   keywords: [
     'racks, rack picking, mezzanine, anaquel, estanteria, escaleras, mesas, elevadores, cajon hormero, gabinete, herreria, muebles metalicos, guermar',
   ],

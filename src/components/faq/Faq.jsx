@@ -5,11 +5,20 @@ const Faq = () => {
   return (
     <div className={style.container}>
       <TitleSeparator title='PREGUNTAS FRECUENTES' />
-      <h5 className={style.subtitle}>¡Lo que todo cliente quiere saber!</h5>
+      <h5
+        data-aos='zoom-in-up'
+        data-aos-delay='1000'
+        className={style.subtitle}
+      >
+        ¡Lo que todo cliente quiere saber!
+      </h5>
       <hr />
       {/*  */}
 
       <div
+        data-aos='fade-down'
+        data-aos-easing='linear'
+        data-aos-delay='200'
         className={`${style.questionsContainer} accordion`}
         id='accordionExample'
       >

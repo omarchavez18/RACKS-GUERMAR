@@ -1,4 +1,3 @@
-'use client'
 // @refresh reset
 import style from './products.module.scss'
 import Image from 'next/image'
@@ -43,22 +42,42 @@ function Products() {
       />
       <section className={style.advantages}>
         <div>
-          <Image src={qualityIcon} width={50} height={50} alt='quality icon' />
-          <p>
+          <Image
+            data-aos='fade-down'
+            src={qualityIcon}
+            width={50}
+            height={50}
+            alt='quality icon'
+          />
+          <p data-aos='fade-down'>
             Brindamos los mejores servicios respetando los estandares más altos
             de calidad para cumplir con nuestros clientes.
           </p>
         </div>
         <div>
-          <Image src={toolsIcon} width={50} height={50} alt='tools icon' />
-          <p>
+          <Image
+            data-aos='fade-down'
+            data-aos-delay='200'
+            src={toolsIcon}
+            width={50}
+            height={50}
+            alt='tools icon'
+          />
+          <p data-aos='fade-down' data-aos-delay='200'>
             Nuestros productos son hechos con los mejores materiales para
             garantizar la resistencia y durabilidad.
           </p>
         </div>
         <div>
-          <Image src={rackIcon} width={50} height={50} alt='rack icon' />
-          <p>
+          <Image
+            data-aos='fade-down'
+            data-aos-delay='400'
+            src={rackIcon}
+            width={50}
+            height={50}
+            alt='rack icon'
+          />
+          <p data-aos='fade-down' data-aos-delay='400'>
             Nuestros productos se realizan de acuerdo a tus medidas y
             necesidades brindando un servicio personalizado.
           </p>
@@ -69,10 +88,18 @@ function Products() {
       <div id='rackSelectivo' className={style.principalProduct}>
         <section className={style.principalProductTextSection}>
           <p className={style.subtitle}>
-            <em>Solución ideal para bodegas de almacén.</em>
+            <em data-aos='fade-down'>
+              Solución ideal para bodegas de almacén.
+            </em>
           </p>
-          <h2>Rack Selectivo carga pesada </h2>
-          <p className={style.principalProductText}>
+          <h2 data-aos='fade-down' data-aos-delay='200'>
+            Rack Selectivo carga pesada{' '}
+          </h2>
+          <p
+            data-aos='fade-down'
+            data-aos-delay='400'
+            className={style.principalProductText}
+          >
             Experimenta el poder del almacenamiento con nuestro robusto rack
             selectivo, con capacidades que van desde 800 kg hasta 3.5 toneladas
             por nivel. Es el sistema predilecto en el manejo de productos
@@ -92,10 +119,21 @@ function Products() {
           </p>
 
           <Link href={'/contacto#contacto'}>
-            <Button className={style.btn}>cotizar</Button>
+            <Button
+              data-aos='fade-down'
+              data-aos-delay='400'
+              className={style.btn}
+            >
+              cotizar
+            </Button>
           </Link>
           <div>
-            <section className={style.capacityContainer}>
+            <section
+              data-aos='fade-up'
+              data-aos-anchor-placement='center-bottom'
+              data-aos-delay='400'
+              className={style.capacityContainer}
+            >
               <div>
                 <p>1000+</p>
                 <p>
@@ -113,7 +151,13 @@ function Products() {
           </div>
         </section>
 
-        <div className={style.carouselPrincipalContainer}>
+        <div
+          data-aos='fade-zoom-in'
+          data-aos-easing='ease-in-back'
+          data-aos-delay='300'
+          data-aos-offset='0'
+          className={style.carouselPrincipalContainer}
+        >
           <Carousel
             firstImage={rackCarga9}
             images={[
@@ -136,15 +180,23 @@ function Products() {
           <div className={style.titleAndImage}>
             <section className={style.titleSection}>
               <p>
-                <em>
+                <em data-aos='fade-down'>
                   Descubre la flexibilidad sin límites con nuestro rack picking
                   .
                 </em>
               </p>
-              <h2>Rack Picking</h2>
+              <h2 data-aos='fade-down' data-aos-delay='200'>
+                Rack Picking
+              </h2>
             </section>
 
-            <section className={style.secondaryMainImgContainer}>
+            <section
+              data-aos='fade-zoom-in'
+              data-aos-easing='ease-in-back'
+              data-aos-delay='300'
+              data-aos-offset='0'
+              className={style.secondaryMainImgContainer}
+            >
               <Carousel
                 firstImage={rackPicking2}
                 images={[
@@ -156,7 +208,11 @@ function Products() {
             </section>
           </div>
 
-          <div className={style.secondaryMainText}>
+          <div
+            data-aos='fade-down'
+            data-aos-delay='400'
+            className={style.secondaryMainText}
+          >
             <p>
               Descubre la eficiencia en el almacenamiento con nuestro rack
               picking diseñado para cargas de 400 a 750 kg por nivel, perfecto
@@ -180,6 +236,8 @@ function Products() {
 
             <Link href={'/contacto#contacto'}>
               <Button
+                data-aos='fade-down'
+                data-aos-delay='600'
                 style={{ margin: '0', background: 'white', border: 'none' }}
                 className={style.btn}
               >
@@ -192,7 +250,11 @@ function Products() {
         {/* MEZZANINE */}
         <div id='mezzanine' className={style.mezzanine}>
           <div className={style.mezzanineMainText}>
-            <section className={style.firstSection}>
+            <section
+              data-aos='fade-down'
+              data-aos-delay='200'
+              className={style.firstSection}
+            >
               <p>
                 El mezzanine, también conocido como entrepiso o tapanco,
                 representa un sistema de almacenamiento inteligente que optimiza
@@ -209,7 +271,11 @@ function Products() {
               </p>
             </section>
 
-            <section className={style.secondSection}>
+            <section
+              data-aos='fade-down'
+              data-aos-delay='400'
+              className={style.secondSection}
+            >
               <p>
                 El segundo tipo de mezzanine se sustenta en nuestro rack
                 selectivo de carga pesada, siendo perfecto para el
@@ -228,21 +294,35 @@ function Products() {
               </p>
             </section>
             <Link href={'/contacto#contacto'}>
-              <Button className={style.btn}>cotizar</Button>
+              <Button
+                data-aos='fade-down'
+                data-aos-delay='600'
+                className={style.btn}
+              >
+                cotizar
+              </Button>
             </Link>
           </div>
           <div className={style.mezzanineTitleAndCarousel}>
             <section className={style.mezzanineTitleSection}>
-              <p>
+              <p data-aos='fade-down'>
                 <em>
                   Ideal para maximizar la eficiencia y la capacidad de
                   almacenamiento en espacios reducidos .
                 </em>
               </p>
-              <h2>Mezzanine</h2>
+              <h2 data-aos='fade-down' data-aos-delay='200'>
+                Mezzanine
+              </h2>
             </section>
 
-            <section className={style.mezzanineCarouselContainer}>
+            <section
+              data-aos='fade-zoom-in'
+              data-aos-easing='ease-in-back'
+              data-aos-delay='300'
+              data-aos-offset='0'
+              className={style.mezzanineCarouselContainer}
+            >
               <Carousel
                 firstImage={mezzanine1}
                 images={[{ image: mezzanine2, alt: 'mezzanine' }]}
@@ -256,8 +336,8 @@ function Products() {
         <div id='anaquel' className={style.anaquel}>
           <div className={style.anaquelTextAndTitle}>
             <div className={style.anaquelText}>
-              <h3>Anaquel sin tornillos</h3>
-              <p>
+              <h3 data-aos='fade-down'>Anaquel sin tornillos</h3>
+              <p data-aos='fade-down' data-aos-delay='200'>
                 Esta opción se destaca por su adaptabilidad a diversas
                 situaciones de almacenaje, con niveles que pueden variar según
                 las necesidades específicas de cada caso. La versatilidad es
@@ -272,21 +352,34 @@ function Products() {
             </div>
             <section className={style.anaquelTitle}>
               <p>
-                <em>
+                <em data-aos='fade-down' data-aos-delay='200'>
                   Una solución flexible para negocios donde la carga no supera
                   los 200 kg por nivel y el almacenamiento se realiza
                   manualmente.
                 </em>
               </p>
-              <h2>Anaqueles</h2>
+              <h2 data-aos='fade-down' data-aos-delay='300'>
+                Anaqueles
+              </h2>
               <Link href={'/contacto#contacto'}>
-                <Button className={style.btn}>cotizar</Button>
+                <Button
+                  data-aos='fade-down'
+                  data-aos-delay='400'
+                  className={style.btn}
+                >
+                  cotizar
+                </Button>
               </Link>
             </section>
           </div>
 
           <div className={style.anaquelCarouselAndText}>
-            <section className={style.anaquelCarouselContainer}>
+            <section
+              data-aos='fade-up'
+              data-aos-anchor-placement='center-bottom'
+              data-aos-delay='400'
+              className={style.anaquelCarouselContainer}
+            >
               <Carousel
                 firstImage={anaquel1}
                 images={[
@@ -297,8 +390,10 @@ function Products() {
             </section>
 
             <section className={style.anaquelText}>
-              <h3>Anaquel sin tornillos tipo AP</h3>
-              <p>
+              <h3 data-aos='fade-down' data-aos-delay='200'>
+                Anaquel sin tornillos tipo AP
+              </h3>
+              <p data-aos='fade-down' data-aos-delay='400'>
                 Nuestro anaquel totalmente metálico tipo AP redefine la
                 practicidad y la eficiencia. Libre de tornillos y con un montaje
                 simple que te permite armar tu estante en tan solo 5 minutos,
@@ -321,7 +416,11 @@ function Products() {
 
         {/* ESTANTERIAS */}
         <div id='estanterias' className={style.estanterias}>
-          <div className={style.estanteriaCarouselContainer}>
+          <div
+            data-aos='fade-up'
+            data-aos-anchor-placement='center-bottom'
+            className={style.estanteriaCarouselContainer}
+          >
             <Carousel
               firstImage={estanteria1}
               images={[]}
@@ -331,14 +430,20 @@ function Products() {
 
           <section className={style.estanteriaTextSection}>
             <p className={style.subtitle}>
-              <em>
+              <em data-aos='fade-down'>
                 Nuestra estantería con tornillos ofrece la solución más
                 económica y eficiente para el almacenaje de cargas menores a 85
                 kg por nivel.
               </em>
             </p>
-            <h2>Estanteria con tornillos </h2>
-            <p className={style.estanteriaProductText}>
+            <h2 data-aos='fade-down' data-aos-delay='200'>
+              Estanteria con tornillos{' '}
+            </h2>
+            <p
+              data-aos='fade-down'
+              data-aos-delay='300'
+              className={style.estanteriaProductText}
+            >
               Con dimensiones flexibles que abarcan anchos de 30 cm a 45 cm y
               longitudes de 60 cm, 80 cm y 90 cm, junto con postes de hasta 2.40
               m de altura, esta estantería se adapta perfectamente a las
@@ -351,6 +456,8 @@ function Products() {
 
             <Link href={'/contacto#contacto'}>
               <Button
+                data-aos='fade-down'
+                data-aos-delay='400'
                 className={style.btn}
                 style={{ background: 'white', border: 'none' }}
               >

@@ -8,8 +8,17 @@ import logo from '@/../src/../public/images/logo/logo.webp'
 import instagramIcon from '@/../src/../public/icons/instagram.svg'
 import whatsappIcon from '@/../src/../public/icons/whatsapp.svg'
 import facebookIcon from '@/../src/../public/icons/facebook.svg'
+import { React, useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Navbar = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    })
+  }, [])
   const pathname = usePathname()
 
   function closeSideNavbar() {
@@ -18,7 +27,12 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`navbar  bg-body-tertiary fixed-top ${style.nav} `}>
+    <nav
+      data-aos='fade-down'
+      data-aos-easing='linear'
+      data-aos-duration='1000'
+      className={`navbar  bg-body-tertiary fixed-top ${style.nav} `}
+    >
       {/* FIRST SECTION */}
 
       {/* ICONS */}
