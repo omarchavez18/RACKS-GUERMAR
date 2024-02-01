@@ -60,7 +60,14 @@
     text-align: center;
     transition: all 450ms ease-in-out;
     scale: 0;
-    font-size: xx-large;
+    padding: 0.5rem;
+
+    .rackSTexto {
+      font-size: x-large;
+    }
+    p {
+      margin-bottom: 0;
+    }
   }
 
   .image:hover .btnPop {
@@ -105,6 +112,11 @@
     .image6 {
       display: none;
     }
+    .btnPop {
+      .rackSTexto {
+        font-size: var(--bs-body-font-size);
+      }
+    }
   }
 }
 @media (max-width: 576px) {
@@ -116,12 +128,12 @@
       'image3 image4'
       'image5 image6';
     .image6 {
-      display: block;
+      display: flex;
     }
     .btnPop {
       width: fit-content;
       height: 6rem;
-      font-size: xx-large;
+
       padding: 0.5rem;
     }
   }
@@ -141,5 +153,13 @@
       display: none;
     }
     height: 40rem;
+
+    .btnPop {
+      font-size: x-large;
+
+      .rackSTexto {
+        font-size: x-large;
+      }
+    }
   }
 }

@@ -28,7 +28,7 @@ function Gallery() {
           <Image src={rackCarga3} alt='rack selectivo' fill />
           <Link href={'/productos#rackSelectivo'}>
             <section className={style.btnPop}>
-              <p>RACK SELECTIVO</p>
+              <p className={style.rackSTexto}>RACK SELECTIVO</p>
             </section>
           </Link>
         </div>
@@ -36,7 +36,9 @@ function Gallery() {
         <div className={classNames(style.image2, style.image)}>
           <Image src={rackPicking2} alt='image2' fill />
           <Link href={'/productos#rackPicking'}>
-            <section className={style.btnPop}>RACK PICKING</section>
+            <section className={style.btnPop}>
+              <p className={style.rackSTexto}>RACK PICKING</p>
+            </section>
           </Link>
         </div>
 
@@ -52,21 +54,27 @@ function Gallery() {
         <div className={classNames(style.image4, style.image)}>
           <Image src={mezzanine1} alt='image4' fill />
           <Link href={'/productos#mezzanine'}>
-            <section className={style.btnPop}>MEZZANINE</section>
+            <section className={style.btnPop}>
+              <p>MEZZANINE</p>
+            </section>
           </Link>
         </div>
 
         <div className={classNames(style.image5, style.image)}>
           <Image src={estanteriaConTornillo1} alt='image5' fill />
           <Link href={'/productos#estanterias'}>
-            <section className={style.btnPop}>ESTANTERIA CON TORNILLOS</section>
+            <section className={style.btnPop}>
+              <p>ESTANTERIA CON TORNILLOS</p>
+            </section>
           </Link>
         </div>
 
         <div className={classNames(style.image6, style.image)}>
           <Image src={mesa1} alt='image6' fill />
           <Link href={'/productos#otrosProductos'}>
-            <section className={style.btnPop}>OTROS PRODUCTOS</section>
+            <section className={style.btnPop}>
+              <p>OTROS PRODUCTOS</p>
+            </section>
           </Link>
         </div>
       </section>

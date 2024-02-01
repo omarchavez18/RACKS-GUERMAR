@@ -49,7 +49,6 @@ function Contacto() {
         </p>
       </div>
 
-      {/*  */}
       <section className={style.mapAndIconsContainer}>
         <div
           data-aos='fade-zoom-in'
