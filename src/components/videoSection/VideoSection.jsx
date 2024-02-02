@@ -13,7 +13,15 @@ function VideoSection({ video, title, subtitle }) {
       className={style.container}
     >
       <section className={style.videoArea}>
-        <video autoPlay muted loop src={video} />
+        <video
+          preload='auto'
+          autoPlay
+          muted
+          loop
+          src={video}
+          type='video/mp4'
+          playsInline
+        />
         <div className={style.titleAndBtn}>
           <section className={style.bar}></section>
           <h2 data-aos='fade-right' data-aos-delay='1000'>
