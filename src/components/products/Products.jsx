@@ -30,7 +30,6 @@ import MultiCarousel from '../multiItemCarousel/MultiCarousel'
 import TitleSeparator from '../titleSeparator/TitleSeparator'
 import Button from '../button/Button'
 import Carousel from '../carousel/Carousel'
-import Link from 'next/link'
 
 function Products() {
   return (
@@ -234,7 +233,7 @@ function Products() {
               a las cambiantes necesidades de tu operación.
             </p>
 
-            <Link href={'/contacto#contacto'}>
+            <a href={'/contacto#contacto'}>
               <Button
                 data-aos='fade-down'
                 data-aos-delay='600'
@@ -243,7 +242,7 @@ function Products() {
               >
                 cotizar
               </Button>
-            </Link>
+            </a>
           </div>
         </main>
 
@@ -293,7 +292,7 @@ function Products() {
                 productos.
               </p>
             </section>
-            <Link href={'/contacto#contacto'}>
+            <a href={'/contacto#contacto'}>
               <Button
                 data-aos='fade-down'
                 data-aos-delay='600'
@@ -301,7 +300,7 @@ function Products() {
               >
                 cotizar
               </Button>
-            </Link>
+            </a>
           </div>
           <div className={style.mezzanineTitleAndCarousel}>
             <section className={style.mezzanineTitleSection}>
@@ -361,7 +360,7 @@ function Products() {
               <h2 data-aos='fade-down' data-aos-delay='300'>
                 Anaqueles
               </h2>
-              <Link href={'/contacto#contacto'}>
+              <a href={'/contacto#contacto'}>
                 <Button
                   data-aos='fade-down'
                   data-aos-delay='400'
@@ -369,7 +368,7 @@ function Products() {
                 >
                   cotizar
                 </Button>
-              </Link>
+              </a>
             </section>
           </div>
 
@@ -454,7 +453,7 @@ function Products() {
               para optimizar el espacio de almacenamiento en tu negocio.
             </p>
 
-            <Link href={'/contacto#contacto'}>
+            <a href={'/contacto#contacto'}>
               <Button
                 data-aos='fade-down'
                 data-aos-delay='400'
@@ -463,7 +462,7 @@ function Products() {
               >
                 cotizar
               </Button>
-            </Link>
+            </a>
           </section>
         </div>
       </section>

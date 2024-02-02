@@ -1,7 +1,6 @@
 //@refresh reset
 import Image from 'next/image'
 import style from './gallery.module.scss'
-import Link from 'next/link'
 import TitleSeparator from '../titleSeparator/TitleSeparator'
 import rackCarga3 from '@/../public/images/products/rackSelectivo/rackCarga3.jpg'
 import mezzanine1 from '@/../public/images/products/mezzanine/mezzanine2.jpg'
@@ -26,56 +25,56 @@ function Gallery() {
           className={classNames(style.image1, style.image)}
         >
           <Image src={rackCarga3} alt='rack selectivo' fill={true} />
-          <Link href={'/productos#rackSelectivo'}>
+          <a href={'/productos#rackSelectivo'}>
             <section className={style.btnPop}>
               <p className={style.rackSTexto}>RACK SELECTIVO</p>
             </section>
-          </Link>
+          </a>
         </div>
 
         <div className={classNames(style.image2, style.image)}>
           <Image src={rackPicking2} alt='image2' fill={true} />
-          <Link href={'/productos#rackPicking'}>
+          <a href={'/productos#rackPicking'}>
             <section className={style.btnPop}>
               <p className={style.rackSTexto}>RACK PICKING</p>
             </section>
-          </Link>
+          </a>
         </div>
 
         <div className={classNames(style.image3, style.image)}>
           <Image src={anaquel1} alt='image3' fill={true} />
-          <Link href={'/productos#anaquel'}>
+          <a href={'/productos#anaquel'}>
             <section className={style.btnPop}>
               <p>ANAQUELES</p>
             </section>
-          </Link>
+          </a>
         </div>
 
         <div className={classNames(style.image4, style.image)}>
           <Image src={mezzanine1} alt='image4' fill={true} />
-          <Link href={'/productos#mezzanine'}>
+          <a href={'/productos#mezzanine'}>
             <section className={style.btnPop}>
               <p>MEZZANINE</p>
             </section>
-          </Link>
+          </a>
         </div>
 
         <div className={classNames(style.image5, style.image)}>
           <Image src={estanteriaConTornillo1} alt='image5' fill={true} />
-          <Link href={'/productos#estanterias'}>
+          <a href={'/productos#estanterias'}>
             <section className={style.btnPop}>
               <p>ESTANTERIA CON TORNILLOS</p>
             </section>
-          </Link>
+          </a>
         </div>
 
         <div className={classNames(style.image6, style.image)}>
           <Image src={mesa1} alt='image6' fill={true} />
-          <Link href={'/productos#otrosProductos'}>
+          <a href={'/productos#otrosProductos'}>
             <section className={style.btnPop}>
               <p>OTROS PRODUCTOS</p>
             </section>
-          </Link>
+          </a>
         </div>
       </section>
       <div className={style.bottomSeparator}></div>
