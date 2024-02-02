@@ -69,11 +69,11 @@ function Contacto() {
         <div className={style.textAndIcons}>
           <div className={style.sectionsContainer}>
             <section>
-              <h6 data-aos='fade-right' data-aos-duration='1000'>
+              <h6 data-aos='fade-down' data-aos-duration='1000'>
                 Llamanos para atenderte de inmediato o mandanós un WhatsApp.
               </h6>
               <Button
-                data-aos='fade-right'
+                data-aos='fade-down'
                 data-aos-delay='400'
                 className={style.btn}
               >
@@ -89,7 +89,7 @@ function Contacto() {
               </Button>
 
               <Button
-                data-aos='fade-right'
+                data-aos='fade-down'
                 data-aos-delay='600'
                 className={style.btn}
               >
@@ -109,13 +109,13 @@ function Contacto() {
             </section>
 
             <section>
-              <h6 data-aos='fade-left' data-aos-duration='1000'>
+              <h6 data-aos='fade-up' data-aos-duration='1000'>
                 Envíanos un email preguntando por el rack o servicio que deseas
                 adquirir.
               </h6>
 
               <Button
-                data-aos='fade-left'
+                data-aos='fade-up'
                 data-aos-delay='400'
                 className={classNames(style.btn, style.emailBtn)}
               >

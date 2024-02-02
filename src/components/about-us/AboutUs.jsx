@@ -128,12 +128,10 @@ function AboutUs() {
         <div className={style.companyValuesContainer}>
           <section className={style.valuesContainerImg}></section>
           <section className={style.valuesText}>
-            <h3 data-aos='fade-left' data-aos-easing='linear'>
-              VISIÓN
-            </h3>
+            <h3 data-aos='fade-right'>VISIÓN</h3>
             <hr />
             <p
-              data-aos='fade-left'
+              data-aos='fade-right'
               data-aos-easing='linear'
               data-aos-delay='200'
             >
