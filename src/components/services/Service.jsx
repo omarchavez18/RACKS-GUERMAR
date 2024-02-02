@@ -195,7 +195,7 @@ const Service = () => {
             className={style.img}
             src={services}
             alt='rack'
-            fill
+            fill={true}
           />
         </section>
       </div>

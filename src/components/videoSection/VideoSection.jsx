@@ -14,7 +14,7 @@ function VideoSection({ video, title, subtitle }) {
     >
       <section className={style.videoArea}>
         <video
-          preload='auto'
+          preload='none'
           autoPlay
           muted
           loop

@@ -1,7 +1,7 @@
 .btn {
   background: none;
-  color: var(--blue);
-  border: 1.5px solid var(--blue);
+  color: white;
+  border: 1.5px solid var(--grey);
   border-radius: 1rem;
   position: relative;
   z-index: 1;
@@ -20,7 +20,7 @@
 }
 .btn::after {
   content: '';
-  background: var(--blue);
+  background: var(--grey);
   position: absolute;
   z-index: -1;
   padding: 16px 20px;

@@ -18,7 +18,7 @@ function Contacto() {
   return (
     <div className={style.container}>
       <div className={style.imageContainer}>
-        <Image data-aos='flip-up' src={worker} alt='contact' fill />
+        <Image data-aos='flip-up' src={worker} alt='contact' fill={true} />
       </div>
 
       <TitleSeparator title={'CONTACTO'} />

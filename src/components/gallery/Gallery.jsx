@@ -25,7 +25,7 @@ function Gallery() {
           data-aos-anchor-placement='center-center'
           className={classNames(style.image1, style.image)}
         >
-          <Image src={rackCarga3} alt='rack selectivo' fill />
+          <Image src={rackCarga3} alt='rack selectivo' fill={true} />
           <Link href={'/productos#rackSelectivo'}>
             <section className={style.btnPop}>
               <p className={style.rackSTexto}>RACK SELECTIVO</p>
@@ -34,7 +34,7 @@ function Gallery() {
         </div>
 
         <div className={classNames(style.image2, style.image)}>
-          <Image src={rackPicking2} alt='image2' fill />
+          <Image src={rackPicking2} alt='image2' fill={true} />
           <Link href={'/productos#rackPicking'}>
             <section className={style.btnPop}>
               <p className={style.rackSTexto}>RACK PICKING</p>
@@ -43,7 +43,7 @@ function Gallery() {
         </div>
 
         <div className={classNames(style.image3, style.image)}>
-          <Image src={anaquel1} alt='image3' fill />
+          <Image src={anaquel1} alt='image3' fill={true} />
           <Link href={'/productos#anaquel'}>
             <section className={style.btnPop}>
               <p>ANAQUELES</p>
@@ -52,7 +52,7 @@ function Gallery() {
         </div>
 
         <div className={classNames(style.image4, style.image)}>
-          <Image src={mezzanine1} alt='image4' fill />
+          <Image src={mezzanine1} alt='image4' fill={true} />
           <Link href={'/productos#mezzanine'}>
             <section className={style.btnPop}>
               <p>MEZZANINE</p>
@@ -61,7 +61,7 @@ function Gallery() {
         </div>
 
         <div className={classNames(style.image5, style.image)}>
-          <Image src={estanteriaConTornillo1} alt='image5' fill />
+          <Image src={estanteriaConTornillo1} alt='image5' fill={true} />
           <Link href={'/productos#estanterias'}>
             <section className={style.btnPop}>
               <p>ESTANTERIA CON TORNILLOS</p>
@@ -70,7 +70,7 @@ function Gallery() {
         </div>
 
         <div className={classNames(style.image6, style.image)}>
-          <Image src={mesa1} alt='image6' fill />
+          <Image src={mesa1} alt='image6' fill={true} />
           <Link href={'/productos#otrosProductos'}>
             <section className={style.btnPop}>
               <p>OTROS PRODUCTOS</p>

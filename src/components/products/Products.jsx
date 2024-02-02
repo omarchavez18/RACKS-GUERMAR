@@ -118,7 +118,7 @@ function Products() {
             almacenamiento de carga pesada.
           </p>
 
-          <Link href={'/contacto#contacto'}>
+          <a href={'/contacto#contacto'}>
             <Button
               data-aos='fade-down'
               data-aos-delay='400'
@@ -126,7 +126,7 @@ function Products() {
             >
               cotizar
             </Button>
-          </Link>
+          </a>
           <div>
             <section
               data-aos='fade-up'
@@ -159,6 +159,7 @@ function Products() {
           className={style.carouselPrincipalContainer}
         >
           <Carousel
+            carouselId={'carousel1'}
             firstImage={rackCarga9}
             images={[
               { image: rackCarga1, alt: 'rack selectivo de carga pesada' },
@@ -169,7 +170,6 @@ function Products() {
               { image: rackCarga8, alt: 'rack selectivo de carga pesada' },
               { image: rackCarga3, alt: 'rack selectivo de carga pesada' },
             ]}
-            carouselId={'carousel1'}
           />
         </div>
       </div>

@@ -69,7 +69,7 @@ const PrincipalClients = () => {
               className={style.imageContainer}
               key={i}
             >
-              <Image src={client} alt='' fill />
+              <Image src={client} alt='' fill={true} />
             </div>
           )
         })}

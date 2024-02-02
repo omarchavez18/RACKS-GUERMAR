@@ -34,7 +34,7 @@ function AboutUs() {
               data-aos='fade-down'
               src={quienesSomos1}
               alt='guermar'
-              fill
+              fill={true}
             />
           </div>
         </section>
@@ -47,7 +47,7 @@ function AboutUs() {
             className={style.historyImg}
             src={quienesSomos1}
             alt='guermar'
-            fill
+            fill={true}
           />
         </div>
 

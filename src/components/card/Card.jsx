@@ -8,7 +8,7 @@ function Card({ image, imageAlt, title, subtitle, buttonText, click }) {
     <>
       <div className={style.cards}>
         <div className={style.imgContainer}>
-          <Image src={image} alt={imageAlt} fill />
+          <Image src={image} alt={imageAlt} fill={true} />
         </div>
         <div className={style.textBox}>
           <h4>{title}</h4>

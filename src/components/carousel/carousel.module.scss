@@ -4,13 +4,13 @@
     height: 100%;
     .element {
       height: 100%;
-      .imagesContainer {
-        width: 100%;
-        img {
-          padding: 3rem;
-          object-fit: cover;
-        }
+      // .imagesContainer {
+      //   width: 100%;
+      img {
+        padding: 3rem;
+        object-fit: cover;
       }
+      // }
     }
   }
 }
