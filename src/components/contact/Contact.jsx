@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Button from '../button/Button'
-
 import subtitleStyle from '@/components/principalClients/principalClients.module.scss'
 import logo from '@/../public/images/logo/rackLogo.webp'
 import telephoneIcon from '@/../public/animatedIcons/telephone.svg'

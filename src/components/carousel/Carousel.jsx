@@ -22,14 +22,14 @@ const Carousel = ({ firstImage, images, carouselId }) => {
         {images.map((image, i) => {
           return (
             <div key={i} className={`${style.element} carousel-item `}>
-              {/* <div className={style.imagesContainer}> */}
-              <Image
-                src={image.image}
-                className='d-block w-100'
-                alt={image.alt}
-                fill={true}
-              />
-              {/* </div> */}
+              <div className={style.imagesContainer}>
+                <Image
+                  src={image.image}
+                  className='d-block w-100'
+                  alt={image.alt}
+                  fill={true}
+                />
+              </div>
             </div>
           )
         })}

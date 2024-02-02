@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import Image from 'next/image'
 import style from './modal.module.scss'
-import Link from 'next/link'
 
 function Modal({ title, modalText, modalVisibleState, images }) {
   const [index, setIndex] = useState(0)
@@ -74,7 +73,7 @@ function Modal({ title, modalText, modalVisibleState, images }) {
             </div>
           </div>
           <div className={`${style.footer} modal-footer`}>
-            <Link href={'/contacto#contacto'}>
+            <a href={'/contacto#contacto'}>
               <button
                 type='button'
                 className='btn btn-secondary'
@@ -82,7 +81,7 @@ function Modal({ title, modalText, modalVisibleState, images }) {
               >
                 Cotizar
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
