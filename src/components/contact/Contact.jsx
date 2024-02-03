@@ -161,7 +161,7 @@ function Contacto() {
         <section className={style.socialIcons}>
           <a href={'https://www.facebook.com/Guermaracks'} target='_blank'>
             <Image
-              data-aos='fade-right'
+              data-aos='fade-down'
               data-aos-delay='400'
               src={facebook}
               alt='facebook'
@@ -172,7 +172,7 @@ function Contacto() {
 
           <a href={'https://www.instagram.com/racks.guermar/'} target='_blank'>
             <Image
-              data-aos='fade-left'
+              data-aos='fade-up'
               data-aos-delay='400'
               src={instagram}
               alt='instagram'

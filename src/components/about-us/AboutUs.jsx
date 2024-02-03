@@ -43,7 +43,7 @@ function AboutUs() {
       <div className={style.historyContainer}>
         <div className={style.historyImageContainer}>
           <Image
-            data-aos='fade-right'
+            data-aos='fade-up'
             className={style.historyImg}
             src={quienesSomos1}
             alt='guermar'
@@ -52,8 +52,8 @@ function AboutUs() {
         </div>
 
         <section className={style.historyTitle}>
-          <h3 data-aos='fade-left'>Nuestra historia</h3>
-          <p data-aos='fade-left' data-aos-delay='200'>
+          <h3 data-aos='fade-down'>Nuestra historia</h3>
+          <p data-aos='fade-down' data-aos-delay='200'>
             {' '}
             Marzo 1987 - León, Guanajuato.
           </p>
