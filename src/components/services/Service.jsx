@@ -6,7 +6,7 @@ import brushIcon from '@/../public/icons/servicios/brush.svg'
 import nutsIcon from '@/../public/icons/servicios/nuts.svg'
 import callcenterIcon from '@/../public/icons/servicios/callcenter.svg'
 import cogIcon from '@/../public/icons/servicios/cog.svg'
-import services from '@/../public/images/service/quienesSomos.jpg'
+import services from '@/../public/images/service/serviceImg.jpg'
 import rackCarga8 from '@/../public/images/products/rackSelectivo/rackCarga8.jpg'
 
 const Service = () => {
@@ -194,7 +194,7 @@ const Service = () => {
           <Image
             data-aos='fade-up'
             className={style.img}
-            src={rackCarga8}
+            src={services}
             alt='rack'
             fill={true}
           />
