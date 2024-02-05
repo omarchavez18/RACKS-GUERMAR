@@ -7,7 +7,6 @@ import nutsIcon from '@/../public/icons/servicios/nuts.svg'
 import callcenterIcon from '@/../public/icons/servicios/callcenter.svg'
 import cogIcon from '@/../public/icons/servicios/cog.svg'
 import services from '@/../public/images/service/serviceImg.jpg'
-import rackCarga8 from '@/../public/images/products/rackSelectivo/rackCarga8.jpg'
 
 const Service = () => {
   return (
