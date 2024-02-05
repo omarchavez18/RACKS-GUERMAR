@@ -43,5 +43,9 @@
     .accordionBody.accordionBody {
       font-size: small;
     }
+    .accordionButton:focus {
+      color: var(--orange);
+      box-shadow: none;
+    }
   }
 }
