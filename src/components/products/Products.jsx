@@ -365,6 +365,7 @@ function Products() {
                   data-aos='fade-down'
                   data-aos-delay='400'
                   className={style.btn}
+                  style={{ background: 'white', border: 'none' }}
                 >
                   cotizar
                 </Button>
