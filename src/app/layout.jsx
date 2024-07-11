@@ -5,6 +5,7 @@ import Navbar from '@/components/navbar/Navbar'
 import BootstrapClient from '@/components/bootstrapClient/BootstrapClient'
 import Footer from '@/components/footer/Footer'
 import FloatingButton from '@/components/floatingButton/FloatingButton'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   title: 'Racks Guermar | Inicio',
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
         <FloatingButton />
         <Footer />
       </body>
+      <GoogleAnalytics gaId='AW-587425054' />
     </html>
   )
 }
