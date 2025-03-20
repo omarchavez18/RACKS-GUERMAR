@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <head>
-        <GoogleTagManager gtmId='GTM-M3Z3J7RR' />
+        <GoogleTagManager gtmId='GTM-T6LFV79N' />
       </head>
       <body className={openSans.className}>
         <Navbar />
