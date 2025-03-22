@@ -5,9 +5,8 @@ import Navbar from '@/components/navbar/Navbar'
 import BootstrapClient from '@/components/bootstrapClient/BootstrapClient'
 import Footer from '@/components/footer/Footer'
 import FloatingButton from '@/components/floatingButton/FloatingButton'
-// import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
-import Script from 'next/script'
 
 export const metadata = {
   title: 'Racks Guermar | Inicio',
