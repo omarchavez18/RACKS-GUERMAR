@@ -5,8 +5,9 @@ import Navbar from '@/components/navbar/Navbar'
 import BootstrapClient from '@/components/bootstrapClient/BootstrapClient'
 import Footer from '@/components/footer/Footer'
 import FloatingButton from '@/components/floatingButton/FloatingButton'
-import { GoogleAnalytics } from '@next/third-parties/google'
+// import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from '@next/third-parties/google'
+import Script from 'next/script'
 
 export const metadata = {
   title: 'Racks Guermar | Inicio',
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <head>
         <GoogleTagManager gtmId='GTM-T6LFV79N' />
+        <GoogleAnalytics gaId='AW-587425054' />
       </head>
       <body className={openSans.className}>
         <Navbar />
@@ -41,7 +43,6 @@ export default function RootLayout({ children }) {
         <FloatingButton />
         <Footer />
       </body>
-      <GoogleAnalytics gaId='AW-587425054' />
     </html>
   )
 }
